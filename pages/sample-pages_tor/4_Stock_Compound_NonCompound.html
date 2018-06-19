@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Inspire - Bootstrap Admin Dashboard Template</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <meta name="viewport" content="width=device-width">
+  <!-- Bootstrap core CSS     -->
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+  <!--  Paper Dashboard CSS    -->
+  <link href="../../assets/css/inspire.css" rel="stylesheet">
+  <!--  CSS for Demo Purpose, don't include it in your project     -->
+  <!-- <link href="../../assets/css/demo.css" rel="stylesheet"> -->
+  <!--     Fonts and icons     -->
+  <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../assets/css/font-muli.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/css/themify-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="mui.css"> </head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#" class="simple-text">
+          <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
+      </div>
+      <div class="logo logo-mini">
+        <a href="#" class="simple-text"> Work </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav flex-column text-dark">
+          <li class="d-flex flex-column">
+            <a href="index.html">
+              <i class="nav-icon"></i>
+              <p>หน้าเข้าสู่ระบบ</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="2_user_dashboard.html">
+              <i class="nav-icon"></i>
+              <p>หน้าหลักผู้ใช้</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="1_sale_twocolumn.html">
+              <i class="nav-icon"></i>
+              <p>งานขาย</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="2_bake_search.html">
+              <i class="nav-icon"></i>
+              <p>รายการอบสายพาน</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="2_bake_menu.html">
+              <i class="nav-icon"></i>
+              <p>งานอบสายพาน(หน้าหลัก)</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="2_bake_setting.html">
+              <i class="nav-icon"></i>
+              <p>งานอบสายพาน(ตั้งค่า)</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="2_bake_save.html">
+              <i class="nav-icon"></i>
+              <p>งานอบสายพาน(บันทึกการอบสายพาน)</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <nav class="navbar navbar-default navbar-toggleable-md navbar-inverse">
+        <div class="navbar-minimize">
+          <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+            <i class="ti-arrow-left"></i>
+          </button>
+        </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Stock &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <br> </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarItems">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ti-bell nav-icon"></i>
+                <span class="notification">6</span>
+                <p class="hidden-lg-up"> Notifications
+                  <i class="fa fa-sort-desc submenu-toggle"></i>
+                </p>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="notificationList">
+                <a class="dropdown-item" href="#">You have 5 new messages</a>
+                <a class="dropdown-item" href="#">You're now friend with Mike</a>
+                <a class="dropdown-item" href="#">Wish Mary on her birthday!</a>
+                <a class="dropdown-item" href="#">5 warnings in Server Console</a>
+                <a class="dropdown-item" href="#">Jane completed 'Induction Training'</a>
+                <a class="dropdown-item" href="#">'Prepare Marketing Report' is overdue</a>
+              </div>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-layout-grid3-alt nav-icon"></i>
+                <p class="hidden-lg-up">Apps</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-user nav-icon"></i>
+                <p class="hidden-lg-up">Profile</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-settings nav-icon"></i>
+                <p class="hidden-lg-up">Settings</p>
+              </a>
+            </li>
+            <li class="separator hidden-lg-up"></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="">
+        <div class="container-fluid">
+          <!--<div class="row">
+            <div class="col-md-12">
+              <div class="card p-2">
+                <div class="row">
+                  <div class="col-md-6" >
+                    <p class="lead">ตารางสินค้าสำเร็จรูป</p>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <select class="custom-select" id="inputGroupSelect01">
+                      <option selected="" value="เลือก">เลือก</option>
+                      <option value="1">จัดส่ง</option>
+                      <option value="2">พิมพ์ใบนำส่ง</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </th>
+                          <th>รายการสินค้า</th>
+                          <th>จำนวน</th>
+                          <th>วันที่ผลิต</th>
+                          <th>การกระทำ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                          <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                          <td>200</td>
+                          <td>12/12/2018</td>
+                          <td contenteditable="true">
+                            <button class="btn btn-info btn-xs">
+                              <i class="fa fa-list"></i>
+                            </button>
+                            <button class="btn btn-warning btn-xs">
+                              <i class="fa fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btn-xs">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                          <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                          <td>200</td>
+                          <td>12/12/2018</td>
+                          <td contenteditable="true">
+                            <button class="btn btn-info btn-xs">
+                              <i class="fa fa-list"></i>
+                            </button>
+                            <button class="btn btn-warning btn-xs">
+                              <i class="fa fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btn-xs">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                          <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                          <td>200</td>
+                          <td>12/12/2018</td>
+                          <td contenteditable="true">
+                            <button class="btn btn-info btn-xs">
+                              <i class="fa fa-list"></i>
+                            </button>
+                            <button class="btn btn-warning btn-xs">
+                              <i class="fa fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btn-xs">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                          <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                          <td>200</td>
+                          <td>12/12/2018</td>
+                          <td contenteditable="true">
+                            <button class="btn btn-info btn-xs">
+                              <i class="fa fa-list"></i>
+                            </button>
+                            <button class="btn btn-warning btn-xs">
+                              <i class="fa fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btn-xs">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="col-lg-12">
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a href="" class="active nav-link" data-toggle="tab" data-target="#tabone">สำเร็จ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="" data-toggle="tab" data-target="#tabtwo">Non Compound</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link" data-toggle="tab" data-target="#tabthree">Compound</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content mt-2">
+                    <div class="tab-pane fade show active" id="tabone" role="tabpanel">
+                      <div class="card p-2">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="lead">สำเร็จ</p>
+                          </div>
+                          <div class="col-md-6 text-right">
+                            <a href="#" class="btn btn-outline-primary pull-right">+เพิ่มรายการ</a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="p-2  col-md-12">
+                            <label for="inputFromDate" class="col-form-label">ค้นหา</label>
+                            <input type="text" class="form-control" id="inputFromDate" placeholder="ค้นหา"> </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>รหัสยาง</th>
+                                  <th>รายละเอียด</th>
+                                  <th>วันที่นำเข้า</th>
+                                  <th>การกระทำ</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>1800101</td>
+                                  <td>AAA</td>
+                                  <td>12/12/2018</td>
+                                  <td contenteditable="true">
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>1800102</td>
+                                  <td>AAA</td>
+                                  <td>12/12/2018</td>
+                                  <td contenteditable="true">
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>1800103</td>
+                                  <td>AAA</td>
+                                  <td>12/12/2018</td>
+                                  <td contenteditable="true">
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>4</td>
+                                  <td>1800104</td>
+                                  <td>AAA</td>
+                                  <td>12/12/2018</td>
+                                  <td contenteditable="true">
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card p-2">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h5>นำเข้า
+                              <br> </h5>
+                          </div>
+                          <div class="col-md-6 text-right">
+                            <div class="p-2 form-group">
+                              <a href="#" class="btn btn-outline-primary btn-block btn-lg"> แสกนบาร์โค้ดนำเข้า</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="p-2 ">
+                              <label for="inputGrade" class="col-form-label">ประเภทที่นำเข้า</label>
+                              <div class="dropdown">
+                                <select id="country" required="" class="form-control">
+                                  <option value="">เลือกสูตรยาง</option>
+                                </select>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">P</a>
+                                  <a class="dropdown-item" href="#">N</a>
+                                  <a class="dropdown-item" href="#">M</a>
+                                  <a class="dropdown-item" href="#">OR-1</a>
+                                  <a class="dropdown-item" href="#">OR-2</a>
+                                  <a class="dropdown-item" href="#">HR-100</a>
+                                  <a class="dropdown-item" href="#">HR-120</a>
+                                  <a class="dropdown-item" href="#">HR-150</a>
+                                  <a class="dropdown-item" href="#">ทดกรด/ต่าง</a>
+                                  <a class="dropdown-item" href="#">ยิงทราย</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="p-2 ">
+                              <label for="inputBeltWidth" class="col-form-label">ความยาว</label>
+                              <input type="text" class="form-control" id="inputBeltWidth" placeholder="ระบุเลขที่"> </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="p-2 ">
+                              <label for="inputGrade" class="col-form-label">&nbsp;</label>
+                              <div class="dropdown">
+                                <a href="#" class="btn btn-outline-primary pull-right btn-block">บันทึก</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">P</a>
+                                  <a class="dropdown-item" href="#">N</a>
+                                  <a class="dropdown-item" href="#">M</a>
+                                  <a class="dropdown-item" href="#">OR-1</a>
+                                  <a class="dropdown-item" href="#">OR-2</a>
+                                  <a class="dropdown-item" href="#">HR-100</a>
+                                  <a class="dropdown-item" href="#">HR-120</a>
+                                  <a class="dropdown-item" href="#">HR-150</a>
+                                  <a class="dropdown-item" href="#">ทดกรด/ต่าง</a>
+                                  <a class="dropdown-item" href="#">ยิงทราย</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card p-2">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h5>นำออก &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                              <br> </h5>
+                          </div>
+                          <div class="col-md-6 text-right">
+                            <div class="p-2 form-group">
+                              <a href="#" class="btn btn-outline-primary btn-block btn-lg"> แสกนบาร์โค้ดนำเข้า</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="p-2 ">
+                              <label for="inputGrade" class="col-form-label">ประเภทที่นำเข้า</label>
+                              <div class="dropdown">
+                                <select id="country" required="" class="form-control">
+                                  <option value="">เลือกสูตรยาง</option>
+                                </select>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">P</a>
+                                  <a class="dropdown-item" href="#">N</a>
+                                  <a class="dropdown-item" href="#">M</a>
+                                  <a class="dropdown-item" href="#">OR-1</a>
+                                  <a class="dropdown-item" href="#">OR-2</a>
+                                  <a class="dropdown-item" href="#">HR-100</a>
+                                  <a class="dropdown-item" href="#">HR-120</a>
+                                  <a class="dropdown-item" href="#">HR-150</a>
+                                  <a class="dropdown-item" href="#">ทดกรด/ต่าง</a>
+                                  <a class="dropdown-item" href="#">ยิงทราย</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="p-2 ">
+                              <label for="inputBeltWidth" class="col-form-label">ความยาว</label>
+                              <input type="text" class="form-control" id="inputBeltWidth" placeholder="ระบุเลขที่"> </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="p-2 ">
+                              <label for="inputGrade" class="col-form-label">&nbsp;</label>
+                              <div class="dropdown">
+                                <a href="#" class="btn btn-outline-primary pull-right btn-block">บันทึก</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">P</a>
+                                  <a class="dropdown-item" href="#">N</a>
+                                  <a class="dropdown-item" href="#">M</a>
+                                  <a class="dropdown-item" href="#">OR-1</a>
+                                  <a class="dropdown-item" href="#">OR-2</a>
+                                  <a class="dropdown-item" href="#">HR-100</a>
+                                  <a class="dropdown-item" href="#">HR-120</a>
+                                  <a class="dropdown-item" href="#">HR-150</a>
+                                  <a class="dropdown-item" href="#">ทดกรด/ต่าง</a>
+                                  <a class="dropdown-item" href="#">ยิงทราย</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabtwo" role="tabpanel">
+                      <div class="card p-2">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="lead">Non Compound</p>
+                          </div>
+                          <div class="col-md-6 text-right">
+                            <a href="#" class="btn btn-outline-primary pull-right">นำออก</a>
+                            <a href="#" class="btn btn-outline-primary pull-right">นำเข้า</a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="p-2  col-md-12">
+                            <label for="inputFromDate" class="col-form-label">ค้นหา</label>
+                            <input type="text" class="form-control" id="inputFromDate" placeholder="ค้นหา"> </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>
+                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </th>
+                                  <th>เลขที่เบิกสินค้ารหัสยาง</th>
+                                  <th>รหัสยาง</th>
+                                  <th>น้ำหนักที่จ่าย</th>
+                                  <th>น้ำหนักที่จ่าย</th>
+                                  <th>Batch No.</th>
+                                  <th>การกระทำ</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                                  <td>200</td>
+                                  <td>100 </td>
+                                  <td>100</td>
+                                  <td>AAA</td>
+                                  <td contenteditable="true">
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>
+                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                                  <td>200</td>
+                                  <td>100 </td>
+                                  <td>100</td>
+                                  <td>AAA</td>
+                                  <td contenteditable="true">
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>
+                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                                  <td>200</td>
+                                  <td>100 </td>
+                                  <td>100</td>
+                                  <td>AAA</td>
+                                  <td contenteditable="true">
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>4</td>
+                                  <td>
+                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                                  <td>200</td>
+                                  <td>100 </td>
+                                  <td>100</td>
+                                  <td>AAA</td>
+                                  <td contenteditable="true">
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabthree" role="tabpanel">
+                      <div class="card p-2">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="lead">Compound</p>
+                          </div>
+                          <div class="col-md-6 text-right">
+                            <a href="#" class="btn btn-outline-primary pull-right">นำออก</a>
+                            <a href="#" class="btn btn-outline-primary pull-right">นำเข้า</a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="p-2  col-md-12">
+                            <label for="inputFromDate" class="col-form-label">ค้นหา</label>
+                            <input type="text" class="form-control" id="inputFromDate" placeholder="ค้นหา"> </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>
+                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </th>
+                                  <th>เลขที่เบิกสินค้ารหัสยาง</th>
+                                  <th>รหัสยาง</th>
+                                  <th>น้ำหนักที่จ่าย</th>
+                                  <th>น้ำหนักที่จ่าย</th>
+                                  <th>Batch No.</th>
+                                  <th>การกระทำ</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                                  <td>200</td>
+                                  <td>100 </td>
+                                  <td>100</td>
+                                  <td>AAA</td>
+                                  <td contenteditable="true">
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>
+                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                                  <td>200</td>
+                                  <td>100 </td>
+                                  <td>100</td>
+                                  <td>AAA</td>
+                                  <td contenteditable="true">
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>
+                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                                  <td>200</td>
+                                  <td>100 </td>
+                                  <td>100</td>
+                                  <td>AAA</td>
+                                  <td contenteditable="true">
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>4</td>
+                                  <td>
+                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                                  <td>200</td>
+                                  <td>100 </td>
+                                  <td>100</td>
+                                  <td>AAA</td>
+                                  <td contenteditable="true">
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="row">
+            <div class="col-md-12">
+              <div class="card p-2" >
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="lead">การจัดส่ง
+                      <br> </p>
+                  </div>
+                  <div class="col-md-6 text-right"> </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="p-2 form-group">
+                      <label for="inputBeltWidth" class="col-form-label">เลขที่</label>
+                      <input type="text" class="form-control" id="inputBeltWidth" placeholder="ระบุเลขที่"> </div>
+                    <div class="p-2 form-group">
+                      <label for="inputBeltWidth" class="col-form-label">วันที่ส่ง</label>
+                      <input type="text" class="form-control" id="inputBeltWidth" placeholder="ระบุวันที่"> </div>
+                    <div class="p-2 form-group">
+                      <label for="inputBeltWidth" class="col-form-label">สถานที่จัดส่ง</label>
+                      <input type="text" class="form-control" id="inputBeltWidth" placeholder="ระบุสถานที่จัดส่ง"> </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="p-2 form-group">
+                      <label for="inputGrade" class="col-form-label">เส้นที่</label>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> - เลือก - </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">P</a>
+                          <a class="dropdown-item" href="#">N</a>
+                          <a class="dropdown-item" href="#">M</a>
+                          <a class="dropdown-item" href="#">OR-1</a>
+                          <a class="dropdown-item" href="#">OR-2</a>
+                          <a class="dropdown-item" href="#">HR-100</a>
+                          <a class="dropdown-item" href="#">HR-120</a>
+                          <a class="dropdown-item" href="#">HR-150</a>
+                          <a class="dropdown-item" href="#">ทดกรด/ต่าง</a>
+                          <a class="dropdown-item" href="#">ยิงทราย</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 form-group">
+                      <label for="inputBeltWidth" class="col-form-label">ชื่อลูกค้า</label>
+                      <input type="text" class="form-control" id="inputBeltWidth" placeholder="ระบุชื่อลูกค้า"> </div>
+                    <div class="p-2 form-group">
+                      <label for="inputGrade" class="col-form-label">สถานะ</label>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> - เลือก - </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">P</a>
+                          <a class="dropdown-item" href="#">N</a>
+                          <a class="dropdown-item" href="#">M</a>
+                          <a class="dropdown-item" href="#">OR-1</a>
+                          <a class="dropdown-item" href="#">OR-2</a>
+                          <a class="dropdown-item" href="#">HR-100</a>
+                          <a class="dropdown-item" href="#">HR-120</a>
+                          <a class="dropdown-item" href="#">HR-150</a>
+                          <a class="dropdown-item" href="#">ทดกรด/ต่าง</a>
+                          <a class="dropdown-item" href="#">ยิงทราย</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> --&gt; </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <p class="copyright float-right"> ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+            <script src="http://code.jquery.com/jquery-3.2.1.js" crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"></script>
+            <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+            <script src="../../assets/vendors/moment.min.js"></script>
+            <!--  Charts Plugin -->
+            <script src="../../assets/vendors/chartist.min.js"></script>
+            <!-- Select Plugin -->
+            <script src="../../assets/vendors/jquery.select-bootstrap.js"></script>
+            <!--  DataTables.net Plugin    -->
+            <script src="../../assets/vendors/jquery.dataTables.min.js"></script>
+            <script src="../../assets/vendors/dataTables.bootstrap4.js"></script>
+            <!-- Sweet Alert 2 plugin -->
+            <script src="../../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
+            <!-- Material Dashboard javascript methods -->
+            <script src="../../assets/js/inspire.js"></script>
+            <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+              <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+            </pingendo>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

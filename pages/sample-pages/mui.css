@@ -1,0 +1,19 @@
+.top-border {
+  border-top: 1px solid lightgray; }
+
+.border-1 {
+  border: 1px solid lightgray; }
+
+.border-2 {
+  border: 2px solid lightgray; }
+
+.border-3 {
+  border: 3px solid lightgray; }
+
+.card{
+  margin: 5px 0;
+}
+
+.sidebar .sidebar-wrapper .nav li > a, .off-canvas-sidebar .sidebar-wrapper .nav li > a {
+  margin: 0px 0px 0px;
+}

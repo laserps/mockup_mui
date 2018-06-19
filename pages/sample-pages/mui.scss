@@ -1,0 +1,43 @@
+// Variables
+//
+// Colors
+
+$theme-colors: (
+  primary: #f1cd31,
+  secondary: #f70655,
+  light: #f3f3f3,
+  dark: #303030,
+  info: #009ac0,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545
+);
+
+$body-bg: white;
+$body-color: #333;
+$body-color-inverse: invert($body-color) !default;
+$link-color: #12bbad;
+
+// Fonts
+$font-family-base: Roboto;
+$headings-font-family: Roboto;
+$display-font-family: Roboto;
+$font-weight-normal: 200;
+$headings-font-weight: 200;
+$lead-font-size:   1.30rem;
+
+.top-border {
+  border-top: 1px solid lightgray;
+}
+
+.border-1 {
+  border: 1px solid lightgray;
+}
+
+.border-2 {
+  border: 2px solid lightgray;
+}
+
+.border-3 {
+  border: 3px solid lightgray;
+}
