@@ -199,10 +199,6 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
-              <!--
-              <div class="card">
-                <div class="card-body p-2">
--->
               <form class="form">
                 <div class="row">
                   <div class="col-md-6">
@@ -264,102 +260,295 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>เลขที่ม้วนผ้า</label>
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>หน้ากว้างก่อนตัด</label>
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>ความยาวก่อนตัด</label>
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>เลนที่ 1</label>
-                          <input type="text" class="form-control" placeholder="กว้าง">
-                          <input type="text" class="form-control" placeholder="ยาว"> </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>เลนที่ 2</label>
-                          <input type="text" class="form-control" placeholder="กว้าง">
-                          <input type="text" class="form-control" placeholder="ยาว"> </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>เลนที่ 3</label>
-                          <input type="text" class="form-control" placeholder="กว้าง">
-                          <input type="text" class="form-control" placeholder="ยาว"> </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>ความยาว (นิ้ว.เมตร)</label>
-                          <input type="text" class="form-control" placeholder="นิ้ว.เมตร"> </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>น้ำหนักเศษทิ้ง</label>
-                          <input type="text" class="form-control" placeholder="กก."> </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>หมายเหตุ</label>
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div class="card">
                   <div class="card-body p-2">
+                    <div class="row">
+                      <div class="col-md-4 p-2">
+                        <div class="">
+                          <div class="">
+                            <div>
+                              <label>เลขที่ม้วนผ้า</label>
+                              <input type="text" class="form-control"> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 p-2">
+                        <div class="">
+                          <div class="">
+                            <div>
+                              <label>หน้ากว้างก่อนตัด</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control" aria-label="...">
+                                <div class="input-group-btn">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                      <a href="#">มม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ซม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ม.</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- /btn-group -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 p-2">
+                        <div class="">
+                          <div class="">
+                            <div>
+                              <label>ความยาวก่อนตัด</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control" aria-label="...">
+                                <div class="input-group-btn">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                      <a href="#">มม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ซม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ม.</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- /btn-group -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 p-2">
+                        <div class="">
+                          <div class="">
+                            <div>
+                              <label>เลนที่ 1</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control" aria-label="..." placeholder="กว้าง">
+                                <div class="input-group-btn">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                      <a href="#">มม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ซม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ม.</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- /btn-group -->
+                              </div>
+                              <div class="input-group">
+                                <input type="text" class="form-control" aria-label="..." placeholder="ยาว">
+                                <div class="input-group-btn">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                      <a href="#">มม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ซม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ม.</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- /btn-group -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 p-2">
+                        <div class="">
+                          <div class="">
+                            <div>
+                              <label>เลนที่ 2</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control" aria-label="..." placeholder="กว้าง">
+                                <div class="input-group-btn">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                      <a href="#">มม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ซม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ม.</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- /btn-group -->
+                              </div>
+                              <div class="input-group">
+                                <input type="text" class="form-control" aria-label="..." placeholder="ยาว">
+                                <div class="input-group-btn">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                      <a href="#">มม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ซม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ม.</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- /btn-group -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 p-2">
+                        <div class="">
+                          <div class="">
+                            <div>
+                              <label>เลนที่ 3</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control" aria-label="..." placeholder="กว้าง">
+                                <div class="input-group-btn">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                      <a href="#">มม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ซม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ม.</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- /btn-group -->
+                              </div>
+                              <div class="input-group">
+                                <input type="text" class="form-control" aria-label="..." placeholder="ยาว">
+                                <div class="input-group-btn">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                      <a href="#">มม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ซม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ม.</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- /btn-group -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 p-2">
+                        <div class="">
+                          <div class="">
+                            <div>
+                              <label>ความยาว (นิ้ว.เมตร)</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control" aria-label="...">
+                                <div class="input-group-btn">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                      <a href="#">มม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ซม.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ม.</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- /btn-group -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 p-2">
+                        <div class="">
+                          <div class="">
+                            <div>
+                              <label>น้ำหนักเศษทิ้ง</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control" aria-label="...">
+                                <div class="input-group-btn">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                      <a href="#">กก.</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">ตัน</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- /btn-group -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="">
+                          <div class="">
+                            <div>
+                              <label>หมายเหตุ</label>
+                              <input type="text" class="form-control"> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
                     <div class="row">
                       <div class="col-md-6">
                         <a href="#" class="btn btn-outline-primary pull-right btn-block">บันทึกเสร็จงาน</a>
@@ -371,10 +560,6 @@
                   </div>
                 </div>
               </form>
-              <!--
-                </div>   
-              </div>
--->
             </div>
           </div>
         </div>
