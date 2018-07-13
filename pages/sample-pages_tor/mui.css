@@ -10,10 +10,61 @@
 .border-3 {
   border: 3px solid lightgray; }
 
-.card{
-  margin: 5px 0;
-}
+.font-sm {
+  font-size: small; }
 
-.sidebar .sidebar-wrapper .nav li > a, .off-canvas-sidebar .sidebar-wrapper .nav li > a {
-  margin: 0px 0px 0px;
-}
+.font-smr {
+  font-size: smaller; }
+
+.font-md {
+  font-size: medium; }
+
+.font-lg {
+  font-size: large; }
+
+.font-lgr {
+  font-size: larger; }
+
+.font-xl {
+  font-size: x-large; }
+
+.font-xs {
+  font-size: x-small; }
+
+.font-xxl {
+  font-size: xx-large; }
+
+.font-xxs {
+  font-size: xx-small; }
+
+tbody.align-text-top > tr > td {
+  vertical-align: text-top !important; }
+
+.modal-header {
+  border-bottom: 1px solid #eceeef; }
+
+.modal-footer {
+  border-top: 1px solid #eceeef; }
+
+.table-secondary {
+  color: white;
+  background-color: #f70655; }
+
+.table-light {
+  background-color: lightgrey; }
+
+.green {
+  color: green; }
+
+.red {
+  color: red; }
+
+.grey {
+  color: grey; }
+
+.bg-lightgrey {
+  background-color: #eeeeee; }
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: white !important;
+  background-color: #009ac0 !important; }

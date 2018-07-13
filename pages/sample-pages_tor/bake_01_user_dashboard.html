@@ -20,7 +20,7 @@
   <link href="../../assets/css/font-muli.css" rel="stylesheet" type="text/css">
   <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
   <link href="../../assets/css/themify-icons.css" rel="stylesheet">
-  <link href="./mui.css" rel="stylesheet"> </head>
+  <link rel="stylesheet" href="mui.css"> </head>
 
 <body>
   <div class="wrapper">
@@ -40,16 +40,46 @@
               <p>หน้าเข้าสู่ระบบ</p>
             </a>
           </li>
-          <li class="d-flex flex-column">
+          <li class="d-flex flex-column active">
             <a href="2_user_dashboard.html">
               <i class="nav-icon"></i>
               <p>หน้าหลักผู้ใช้</p>
             </a>
           </li>
-          <li class="d-flex flex-column active">
+          <li class="d-flex flex-column">
             <a href="1_sale_twocolumn.html">
               <i class="nav-icon"></i>
               <p>งานขาย</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="3_planing.html">
+              <i class="nav-icon"></i>
+              <p>วางแผนผลิต</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="8_cut.html">
+              <i class="nav-icon"></i>
+              <p>ตัดผ้า</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="9_Glue_Coating.html">
+              <i class="nav-icon"></i>
+              <p>เคลือบน้ำกาว</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="10_articulate_v2.html">
+              <i class="nav-icon"></i>
+              <p>ประกบผ้า</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="11_calender.html">
+              <i class="nav-icon"></i>
+              <p>เคลือบผิว</p>
             </a>
           </li>
           <li class="d-flex flex-column">
@@ -76,6 +106,50 @@
               <p>งานอบสายพาน(บันทึกการอบสายพาน)</p>
             </a>
           </li>
+          <li class="d-flex flex-column">
+            <a data-toggle="collapse" href="#tables" class="nav-link collapsed" aria-expanded="false">
+              <p>คลังสินค้า
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="2b94cf34-2f02-ad93-3c9a-fec0a52844f9">
+                <li>
+                  <a class="nav-link" href="4_Stock_Compound_NonCompound.html">คลังสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_In_Stock.html">นำเข้าคลังสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_Out_Stock.html">นำออกคลังสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_In_Compound.html">นำเข้า Compound</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_Out_Compound.html">นำออก Compound</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_In_NonCompound.html">นำเข้า Non Compound</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_Out_NonCompound.html">นำออก Non Compound</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -90,7 +164,8 @@
           <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">สั่งผสมยาง</a>
+          <a class="navbar-brand" href="#">หน้าหลักผู้ใช้&nbsp;- แผนกอบสายพาน
+            <br> </a>
         </div>
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
@@ -137,120 +212,43 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
-              <!--
               <div class="card">
+                <div class="card-header py-1">ข้อมูลผู้ใช้</div>
                 <div class="card-body p-2">
--->
-              <form class="form">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="card p-2">
-                      <div class="row">
-                        <div class="col-md-9">
-                          <p class="lead">ประวัติการสั่งผสมยาง</p>
-                        </div>
-                        <div class="col-md-3">
-                          <a href="#" class="btn btn-outline-primary pull-right btn-block form-group">สั่งผสมยาง</a>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <table class="table">
-                            <thead>
-                              <tr>
-                                <th>#</th>
-                                <th>วันที่สั่ง</th>
-                                <th>สูตร</th>
-                                <th>เกรด</th>
-                                <th>น้ำหนัก</th>
-                                <th>การกระทำ</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>1</td>
-                                <td>2018-12-11</td>
-                                <td>MU 01</td>
-                                <td>M</td>
-                                <td>500</td>
-                                <td>
-                                  <button class="btn btn-info btn-xs">
-                                    <i class="fa fa-list"></i>
-                                  </button>
-                                  <button class="btn btn-warning btn-xs">
-                                    <i class="fa fa-edit"></i>
-                                  </button>
-                                  <button class="btn btn-danger btn-xs">
-                                    <i class="fa fa-trash"></i>
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>2</td>
-                                <td>2018-12-10</td>
-                                <td>MU 02</td>
-                                <td>M</td>
-                                <td>500</td>
-                                <td>
-                                  <button class="btn btn-info btn-xs">
-                                    <i class="fa fa-list"></i>
-                                  </button>
-                                  <button class="btn btn-warning btn-xs">
-                                    <i class="fa fa-edit"></i>
-                                  </button>
-                                  <button class="btn btn-danger btn-xs">
-                                    <i class="fa fa-trash"></i>
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>3</td>
-                                <td>2018-12-09</td>
-                                <td>MU 03</td>
-                                <td>M</td>
-                                <td>500</td>
-                                <td contenteditable="true">
-                                  <button class="btn btn-info btn-xs">
-                                    <i class="fa fa-list"></i>
-                                  </button>
-                                  <button class="btn btn-warning btn-xs">
-                                    <i class="fa fa-edit"></i>
-                                  </button>
-                                  <button class="btn btn-danger btn-xs">
-                                    <i class="fa fa-trash"></i>
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>4</td>
-                                <td>2018-12-08</td>
-                                <td>MU 04</td>
-                                <td>M</td>
-                                <td>500</td>
-                                <td contenteditable="true">
-                                  <button class="btn btn-info btn-xs">
-                                    <i class="fa fa-list"></i>
-                                  </button>
-                                  <button class="btn btn-warning btn-xs">
-                                    <i class="fa fa-edit"></i>
-                                  </button>
-                                  <button class="btn btn-danger btn-xs">
-                                    <i class="fa fa-trash"></i>
-                                  </button>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
+                  <div class="row">
+                    <div class="col-md-1">
+                      <label>ชื่อ:</label>
+                    </div>
+                    <div class="col-md-8">
+                      <span>นายเอบีซี นามสมมุติ</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-1">
+                      <label>ตำแหน่ง:</label>
+                    </div>
+                    <div class="col-md-8">
+                      <span>พนักงานควบคุมเครื่องอบ 1</span>
                     </div>
                   </div>
                 </div>
-              </form>
-              <!--
-                </div>   
               </div>
--->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header py-1">เลือกการทำงาน</div>
+                <div class="card-body p-2">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <a href="#" class="btn btn-outline-primary btn-lg btn-block py-4">ตั้งค่าการอบสายพาน</a>
+                      <a href="#" class="btn btn-outline-primary btn-lg btn-block py-4"> แสกนบาร์โค้ด เลขที่ใบแจ้งผลิต เพื่อเริ่มทำงาน </a>
+                      <a href="#" class="btn btn-outline-primary btn-lg btn-block py-4"> ค้นหาข้อมูลการอบสายพาน </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -268,6 +266,11 @@
     </div>
   </div>
   <!--   Core JS Files   -->
+  <!-- <div class="text-center bg-dark" style="background-image: url(&quot;none&quot;);">
+    <div class="container-fluid">
+      <div class="row"> </div>
+    </div>
+  </div> -->
   <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
   <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
   <script src="../../assets/vendors/tether.min.js" type="text/javascript"></script>

@@ -46,10 +46,40 @@
               <p>หน้าหลักผู้ใช้</p>
             </a>
           </li>
-          <li class="d-flex flex-column active">
+          <li class="d-flex flex-column">
             <a href="1_sale_twocolumn.html">
               <i class="nav-icon"></i>
               <p>งานขาย</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="3_planing.html">
+              <i class="nav-icon"></i>
+              <p>วางแผนผลิต</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="8_cut.html">
+              <i class="nav-icon"></i>
+              <p>ตัดผ้า</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="9_Glue_Coating.html">
+              <i class="nav-icon"></i>
+              <p>เคลือบน้ำกาว</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column  active">
+            <a href="10_articulate_v2.html">
+              <i class="nav-icon"></i>
+              <p>ประกบผ้า</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="11_calender.html">
+              <i class="nav-icon"></i>
+              <p>เคลือบผิว</p>
             </a>
           </li>
           <li class="d-flex flex-column">
@@ -76,6 +106,50 @@
               <p>งานอบสายพาน(บันทึกการอบสายพาน)</p>
             </a>
           </li>
+          <li class="d-flex flex-column">
+            <a data-toggle="collapse" href="#tables" class="nav-link collapsed" aria-expanded="false">
+              <p>คลังสินค้า
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="2b94cf34-2f02-ad93-3c9a-fec0a52844f9">
+                <li>
+                  <a class="nav-link" href="4_Stock_Compound_NonCompound.html">คลังสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_In_Stock.html">นำเข้าคลังสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_Out_Stock.html">นำออกคลังสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_In_Compound.html">นำเข้า Compound</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_Out_Compound.html">นำออก Compound</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_In_NonCompound.html">นำเข้า Non Compound</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_Out_NonCompound.html">นำออก Non Compound</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -90,7 +164,7 @@
           <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">ใบบันทึกการตรวจสอบ</a>
+          <a class="navbar-brand" href="#">ประกบผ้า</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
@@ -146,7 +220,7 @@
                   <div class="col-md-6">
                     <div class="card">
                       <div class="card-body p-2">
-                        <div class="form-group">
+                        <div>
                           <label>เลขที่ใบแจ้งผลิต:</label>
                           <span>M2018120100001</span>
                         </div>
@@ -156,7 +230,7 @@
                   <div class="col-md-3">
                     <div class="card">
                       <div class="card-body p-2">
-                        <div class="form-group">
+                        <div>
                           <label>วันที่สั่งซื้อ: &nbsp;</label>
                           <span>1/12/2561</span>
                         </div>
@@ -166,7 +240,7 @@
                   <div class="col-md-3">
                     <div class="card">
                       <div class="card-body p-2">
-                        <div class="form-group">
+                        <div>
                           <label>กำหนดส่ง: </label>
                           <span>31/12/2561</span>
                         </div>
@@ -205,12 +279,119 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="card">
+                      <div class="card-header"> รายการผ้าที่ใช้ </div>
                       <div class="card-body p-2">
-                        <div>
-                          <label for="firstName">ส่งต่อแผนก</label>
-                          <select class="form-control">
-                            <option value="1">คลัง</option>
-                          </select>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>เลขที่ม้วนผ้า</th>
+                              <th>กว้าง</th>
+                              <th>ยาว</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>xx/xx</td>
+                              <td>xxx</td>
+                              <td>xxxx</td>
+                              <td>
+                                <button> แก้ไข </button>
+                                <button> ลบ </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>xx/xx</td>
+                              <td>xxx</td>
+                              <td>xxxx</td>
+                              <td>
+                                <button> แก้ไข </button>
+                                <button> ลบ </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>xx/xx</td>
+                              <td>xxx</td>
+                              <td>xxxx</td>
+                              <td>
+                                <button> แก้ไข </button>
+                                <button> ลบ </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <hr>
+                        <div class="d-flex p-2">
+                          <div>
+                            <button data-toggle="modal" data-target="#dataEntry" type="button">
+                              <span class="fa fa-plus"></span> เพิ่มรายการผ้า </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header"> ข้อมูลการประกบ</div>
+                      <div class="card-body p-2">
+                        <div class="form-row form-inline">
+                          <div class="form-group col-md-3">
+                            <label class="mr-3"> เวลาเริ่ม</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control">
+                              <div class="input-group-append px-2 pt-2 border-1 text-muted"> น. </div>
+                            </div>
+                          </div>
+                          <div class="form-group col-md-3">
+                            <label class="mr-3"> เวลาเสร็จ</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control">
+                              <div class="input-group-append px-2 pt-2 border-1 text-muted"> น. </div>
+                            </div>
+                          </div>
+                          <div class="form-group col-md-3">
+                            <label class="mr-3"> ของเสีย</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control">
+                              <div class="input-group-append px-2 pt-2 border-1 text-muted"> kg.</div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="form-row form-inline">
+                          <div class="form-group col-md-4">
+                            <label class="mr-3"> ความยาวจริง </label>
+                            <div class="input-group">
+                              <input type="text" class="form-control">
+                              <div class="input-group-append px-2 pt-2 border-1 text-muted"> เมตร </div>
+                            </div>
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label class="mr-3"> ความยาวเผื่อ </label>
+                            <div class="input-group">
+                              <input type="text" class="form-control">
+                              <div class="input-group-append px-2 pt-2 border-1 text-muted"> เมตร </div>
+                            </div>
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label class="mr-3"> ความยาวรวม </label>
+                            <div class="input-group">
+                              <input type="text" class="form-control">
+                              <div class="input-group-append px-2 pt-2 border-1 text-muted"> เมตร </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="form-row px-2">
+                          <div class="form-group">
+                            <label> หมายเหตุ </label>
+                            <input type="text" class="form-control"> </div>
                         </div>
                       </div>
                     </div>
@@ -219,117 +400,13 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="card p-2">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <p class="lead">ประวัติการสั่งผสมยาง</p>
-                        </div>
-                        <div class="col-md-6">
-                          <a href="#" class="btn btn-primary pull-right" data-target="#exampleModal" data-toggle="modal">+เพิ่ม </a>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="row">
-                            <div class="col-md-6"> </div>
-                          </div>
-                          <table class="table">
-                            <thead>
-                              <tr>
-                                <th>วันที่ตรวจสอบ</th>
-                                <th>เวลา</th>
-                                <th>ระยะ</th>
-                                <th>หนารวม</th>
-                                <th>ยาว</th>
-                                <th>ผลการตรวจสอบ</th>
-                                <th>การกระทำ</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>2018-04-01</td>
-                                <td>09.00</td>
-                                <td>5</td>
-                                <td>100</td>
-                                <td>5</td>
-                                <td class="text-success">ผ่าน</td>
-                                <td>
-                                  <button class="btn btn-info btn-xs">
-                                    <i class="fa fa-list"></i>
-                                  </button>
-                                  <button class="btn btn-warning btn-xs">
-                                    <i class="fa fa-edit"></i>
-                                  </button>
-                                  <button class="btn btn-danger btn-xs">
-                                    <i class="fa fa-trash"></i>
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>2018-04-01</td>
-                                <td>09.30</td>
-                                <td>10</td>
-                                <td>100</td>
-                                <td>15</td>
-                                <td class="text-success">ผ่าน</td>
-                                <td>
-                                  <button class="btn btn-info btn-xs">
-                                    <i class="fa fa-list"></i>
-                                  </button>
-                                  <button class="btn btn-warning btn-xs">
-                                    <i class="fa fa-edit"></i>
-                                  </button>
-                                  <button class="btn btn-danger btn-xs">
-                                    <i class="fa fa-trash"></i>
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>2018-04-01</td>
-                                <td>10.00</td>
-                                <td>20</td>
-                                <td>100</td>
-                                <td>35</td>
-                                <td class="text-success">ผ่าน</td>
-                                <td>
-                                  <button class="btn btn-info btn-xs">
-                                    <i class="fa fa-list"></i>
-                                  </button>
-                                  <button class="btn btn-warning btn-xs">
-                                    <i class="fa fa-edit"></i>
-                                  </button>
-                                  <button class="btn btn-danger btn-xs">
-                                    <i class="fa fa-trash"></i>
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>2018-04-01</td>
-                                <td>11.00</td>
-                                <td>30</td>
-                                <td>100</td>
-                                <td>65</td>
-                                <td class="text-success">ผ่าน</td>
-                                <td>
-                                  <button class="btn btn-info btn-xs">
-                                    <i class="fa fa-list"></i>
-                                  </button>
-                                  <button class="btn btn-warning btn-xs">
-                                    <i class="fa fa-edit"></i>
-                                  </button>
-                                  <button class="btn btn-danger btn-xs">
-                                    <i class="fa fa-trash"></i>
-                                  </button>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                      <div class="card-body d-flex justify-content-center p-2">
+                        <div>
+                          <button> สิ้นสุดการทำงาน </button>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12"> </div>
                 </div>
               </form>
               <!--
@@ -350,6 +427,73 @@
           </p>
         </div>
       </footer>
+    </div>
+  </div>
+  <div class="modal fade show" id="dataEntry" tabindex="-1" rold="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">รายการผ้าที่ใช้ในการประกบ</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group row mb-3">
+            <label class="offset-md-1 col-md-3 col-form-label">เลขที่ม้วนผ้า</label>
+            <div class="col-md-6">
+              <input type="text" class="form-control"> </div>
+          </div>
+          <div class="form-group row">
+            <label class="offset-md-1 col-md-3 col-form-label">ผ้าที่ประกบ</label>
+            <div class="col-md-6 input-group">
+              <input type="text" class="form-control">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a href="#">มม.</a>
+                  </li>
+                  <li>
+                    <a href="#">ซม.</a>
+                  </li>
+                  <li>
+                    <a href="#">ม.</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="offset-md-1 col-md-3 col-form-label">ความยาว</label>
+            <div class="col-md-6 input-group">
+              <input type="text" class="form-control">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a href="#">มม.</a>
+                  </li>
+                  <li>
+                    <a href="#">ซม.</a>
+                  </li>
+                  <li>
+                    <a href="#">ม.</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">บันทึก</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+        </div>
+      </div>
     </div>
   </div>
   <!--   Core JS Files   -->
@@ -393,44 +537,6 @@
   <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
     <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
   </pingendo>
-  <div class="modal" id="exampleModal" role="dialog" tabindex="-1" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">บันทึกข้อมูลการตรวจสอบ</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="firstName">หนารวม</label>
-              <input type="text" class="form-control" id="firstName" placeholder="มม." value="" required=""> </div>
-            <div class="col-md-6 mb-3">
-              <label for="firstName">ความยาว</label>
-              <input type="text" class="form-control" id="firstName" value="" required="" placeholder="เมตร"> </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="firstName">ผลการตรวจสอบ</label>
-              <select class="form-control">
-                <option value="1">ผ่าน</option>
-                <option value="2">ไม่ผ่าน</option>
-              </select>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="firstName">หมายเหตุ</label>
-              <input type="text" class="form-control" id="firstName" value="" required=""> </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">บันทึก</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 
 </html>

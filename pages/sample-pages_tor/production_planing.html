@@ -20,7 +20,7 @@
   <link href="../../assets/css/font-muli.css" rel="stylesheet" type="text/css">
   <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
   <link href="../../assets/css/themify-icons.css" rel="stylesheet">
-  <link href="./mui.css" rel="stylesheet"> </head>
+  <link rel="stylesheet" href="mui.css"> </head>
 
 <body>
   <div class="wrapper">
@@ -52,7 +52,7 @@
               <p>งานขาย</p>
             </a>
           </li>
-          <li class="d-flex flex-column">
+          <li class="d-flex flex-column active">
             <a href="3_planing.html">
               <i class="nav-icon"></i>
               <p>วางแผนผลิต</p>
@@ -132,7 +132,7 @@
                 <li>
                   <a class="nav-link" href="4_In_NonCompound.html">นำเข้า Non Compound</a>
                 </li>
-                <li class="active">
+                <li>
                   <a class="nav-link" href="4_Out_NonCompound.html">นำออก Non Compound</a>
                 </li>
                 <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
@@ -164,7 +164,7 @@
           <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">การนำออกยาง Non Compound</a>
+          <a class="navbar-brand" href="#">วางแผนผลิต</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
@@ -211,156 +211,124 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
-              <!--
-              <div class="card">
-                <div class="card-body p-2">
--->
-              <form class="form">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>เลขที่ใบแจ้งผลิต:</label>
-                          <span>M2018120100001</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>วันที่สั่งซื้อ: &nbsp;</label>
-                          <span>1/12/2561</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>กำหนดส่ง: </label>
-                          <span>31/12/2561</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="card p-2">
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                          <li class="nav-item">
-                            <a class="nav-link active" href="#" data-toggle="tab" data-target="#tabone">รายละเอียดสายพาน</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="tab" data-target="#tabtwo">รายละเอียดลูกค้า</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="card-body p-2">
-                        <div class="tab-content mt-2">
-                          <div class="tab-pane fade show active" id="tabone" role="tabpanel">
-                            <p> บั้ง สีดำ 40 นิ้ว x 5 ชั้น EP 120 / เกรด M (M/PI) </p>
-                            <p> หนา: 3/2 มม. หนารวม: 10 มม. / ยาว 15 เมตร, ต่อกลม, ตีตรา MUI </p>
-                          </div>
-                          <div class="tab-pane fade" id="tabtwo" role="tabpanel">
-                            <p class=""> ชื่อลูกค้า: ชลบุรี เอ็มยูไอ ไพศาล </p>
-                            <p> ประเภทลูกค้า: ลูกค้าพิเศษ </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card p-2">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <p class="lead">นำออก Non Compound </p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="p-2 ">
-                        <label for="inputGrade" class="col-form-label">สูตรยาง</label>
-                        <div class="dropdown">
-                          <select id="country" required="" class="form-control">
-                            <option value="">เลือกสูตรยาง</option>
-                          </select>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">P</a>
-                            <a class="dropdown-item" href="#">N</a>
-                            <a class="dropdown-item" href="#">M</a>
-                            <a class="dropdown-item" href="#">OR-1</a>
-                            <a class="dropdown-item" href="#">OR-2</a>
-                            <a class="dropdown-item" href="#">HR-100</a>
-                            <a class="dropdown-item" href="#">HR-120</a>
-                            <a class="dropdown-item" href="#">HR-150</a>
-                            <a class="dropdown-item" href="#">ทดกรด/ต่าง</a>
-                            <a class="dropdown-item" href="#">ยิงทราย</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="p-2 ">
-                        <label for="inputBeltWidth" class="col-form-label">Batch No.</label>
-                        <input type="text" class="form-control" id="inputBeltWidth" placeholder="ระบุBatch No."> </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="p-2 ">
-                        <label for="inputBeltWidth" class="col-form-label">น้ำหนักยางที่ต้องการเบิก</label>
-                        <input type="text" class="form-control" id="inputBeltWidth" placeholder="ระบุน้ำหนักยาง"> </div>
-                      <div class="p-2 ">
-                        <label for="inputGrade" class="col-form-label">&nbsp;</label>
-                        <div class="dropdown">
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">P</a>
-                            <a class="dropdown-item" href="#">N</a>
-                            <a class="dropdown-item" href="#">M</a>
-                            <a class="dropdown-item" href="#">OR-1</a>
-                            <a class="dropdown-item" href="#">OR-2</a>
-                            <a class="dropdown-item" href="#">HR-100</a>
-                            <a class="dropdown-item" href="#">HR-120</a>
-                            <a class="dropdown-item" href="#">HR-150</a>
-                            <a class="dropdown-item" href="#">ทดกรด/ต่าง</a>
-                            <a class="dropdown-item" href="#">ยิงทราย</a>
-                          </div>
-                        </div>
-                        <a href="#" class="btn btn-outline-primary pull-right btn-block">บันทึก</a>
-                      </div>
-                    </div>
+                    <p class="lead">รายการสินค้า: รอกำหนดวันผลิต</p>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-12"> </div>
+                  <div class="col-md-12 p-2">
+                    <table class="table table-striped table-hover top-border">
+                      <thead class="font-smr text-nowrap">
+                        <tr>
+                          <th>#</th>
+                          <th>วันที่รับ</th>
+                          <th>เลขที่</th>
+                          <th>รายละเอียดสายพาน</th>
+                          <th>ความยาว</th>
+                          <th>ลูกค้า</th>
+                          <th>จำนวน</th>
+                          <th> </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="align-text-top">
+                          <td>1</td>
+                          <td>1/6/61</td>
+                          <td>1800101</td>
+                          <td> บั้ง (ดำ) M/PI (4+2=10)
+                            <br> 22 นิ้ว x 5 ชั้น EP160 </td>
+                          <td>5 เมตร
+                            <br>ต่อกลม</td>
+                          <td>ลูกค้า</td>
+                          <td>2 เส้น</td>
+                          <td>
+                            <button> กำหนดวันที่ผลิต </button>
+                          </td>
+                        </tr>
+                        <tr class="align-text-top">
+                          <td>2</td>
+                          <td>1/6/61</td>
+                          <td>1800102</td>
+                          <td>บั้ง (ดำ) M/PI (3+1.5=7)
+                            <br> 22 นิ้ว x 3 ชั้น EP160</td>
+                          <td>5 เมตร
+                            <br>ต่อกลม</td>
+                          <td>ลูกค้า</td>
+                          <td>2 เส้น</td>
+                          <td>
+                            <button> กำหนดวันที่ผลิต </button>
+                          </td>
+                        </tr>
+                        <tr class="align-text-top">
+                          <td>3</td>
+                          <td>1/6/61</td>
+                          <td>1800103</td>
+                          <td>บั้ง (ดำ) M/PI (4+2=10)
+                            <br> 22 นิ้ว x 5 ชั้น EP160</td>
+                          <td>5 เมตร
+                            <br>ต่อกลม</td>
+                          <td>ลูกค้า</td>
+                          <td>3 เส้น</td>
+                          <td>
+                            <button> กำหนดวันที่ผลิต </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>1/6/61</td>
+                          <td>1800104</td>
+                          <td>บั้ง (ดำ) M/PI (4+2=10)
+                            <br> 22 นิ้ว x 5 ชั้น EP160</td>
+                          <td>5 เมตร
+                            <br>ต่อกลม</td>
+                          <td>ลูกค้า</td>
+                          <td>3 เส้น</td>
+                          <td>
+                            <button> กำหนดวันที่ผลิต </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="d-flex justify-content-between align-items-baseline top-border pt-3">
+                      <div class="pagination-info flex-grow-1 px-2">
+                        <p> แสดงรายการที่ 1 ถึง 10 จากทั้งหมด 18 รายการ </p>
+                      </div>
+                      <ul class="pagination px-2 ">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1">&lt;</a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">&gt;</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12"> </div>
-                </div>
-                <!--
-                </div>   
               </div>
--->
-              </form>
             </div>
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <div class="container">
-          <p class="copyright float-right"> ©
-            <script>
-              document.write(new Date().getFullYear())
-            </script>
-            <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
-          </p>
-        </div>
-      </footer>
+      <footer class="footer"></footer>
     </div>
   </div>
   <!--   Core JS Files   -->
+  <!-- <div class="text-center bg-dark" style="background-image: url(&quot;none&quot;);">
+    <div class="container-fluid">
+      <div class="row"> </div>
+    </div>
+  </div> -->
   <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
   <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
   <script src="../../assets/vendors/tether.min.js" type="text/javascript"></script>

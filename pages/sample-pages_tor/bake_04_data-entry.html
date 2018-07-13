@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Inspire - Bootstrap Admin Dashboard Template</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <meta name="viewport" content="width=device-width">
+  <!-- Bootstrap core CSS     -->
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+  <!--  Paper Dashboard CSS    -->
+  <link href="../../assets/css/inspire.css" rel="stylesheet">
+  <!--  CSS for Demo Purpose, don't include it in your project     -->
+  <link href="../../assets/css/demo.css" rel="stylesheet">
+  <!--     Fonts and icons     -->
+  <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../assets/css/font-muli.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/css/themify-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="mui.css"> </head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#" class="simple-text">
+          <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
+      </div>
+      <div class="logo logo-mini">
+        <a href="#" class="simple-text"> Work </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav flex-column">
+          <li class="d-flex flex-column">
+            <a href="index.html">
+              <i class="nav-icon"></i>
+              <p>หน้าเข้าสู่ระบบ</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="2_user_dashboard.html">
+              <i class="nav-icon"></i>
+              <p>หน้าหลักผู้ใช้</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="1_sale_twocolumn.html">
+              <i class="nav-icon"></i>
+              <p>งานขาย</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="3_planing.html">
+              <i class="nav-icon"></i>
+              <p>วางแผนผลิต</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="8_cut.html">
+              <i class="nav-icon"></i>
+              <p>ตัดผ้า</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="9_Glue_Coating.html">
+              <i class="nav-icon"></i>
+              <p>เคลือบน้ำกาว</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="10_articulate_v2.html">
+              <i class="nav-icon"></i>
+              <p>ประกบผ้า</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="11_calender.html">
+              <i class="nav-icon"></i>
+              <p>เคลือบผิว</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="2_bake_search.html">
+              <i class="nav-icon"></i>
+              <p>รายการอบสายพาน</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column active">
+            <a href="2_bake_menu.html">
+              <i class="nav-icon"></i>
+              <p>งานอบสายพาน(หน้าหลัก)</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="2_bake_setting.html">
+              <i class="nav-icon"></i>
+              <p>งานอบสายพาน(ตั้งค่า)</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="2_bake_save.html">
+              <i class="nav-icon"></i>
+              <p>งานอบสายพาน(บันทึกการอบสายพาน)</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a data-toggle="collapse" href="#tables" class="nav-link collapsed" aria-expanded="false">
+              <p>คลังสินค้า
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="2b94cf34-2f02-ad93-3c9a-fec0a52844f9">
+                <li>
+                  <a class="nav-link" href="4_Stock_Compound_NonCompound.html">คลังสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_In_Stock.html">นำเข้าคลังสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_Out_Stock.html">นำออกคลังสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_In_Compound.html">นำเข้า Compound</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_Out_Compound.html">นำออก Compound</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_In_NonCompound.html">นำเข้า Non Compound</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_Out_NonCompound.html">นำออก Non Compound</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <nav class="navbar navbar-default navbar-toggleable-md navbar-inverse">
+        <div class="navbar-minimize">
+          <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+            <i class="ti-arrow-left"></i>
+          </button>
+        </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">อบสายพาน - เครื่อง 1700 - กะ 1
+            <br> </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarItems">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ti-bell nav-icon"></i>
+                <span class="notification">6</span>
+                <p class="hidden-lg-up"> Notifications
+                  <i class="fa fa-sort-desc submenu-toggle"></i>
+                </p>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="notificationList">
+                <a class="dropdown-item" href="#">You have 5 new messages</a>
+                <a class="dropdown-item" href="#">You're now friend with Mike</a>
+                <a class="dropdown-item" href="#">Wish Mary on her birthday!</a>
+                <a class="dropdown-item" href="#">5 warnings in Server Console</a>
+                <a class="dropdown-item" href="#">Jane completed 'Induction Training'</a>
+                <a class="dropdown-item" href="#">'Prepare Marketing Report' is overdue</a>
+              </div>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-layout-grid3-alt nav-icon"></i>
+                <p class="hidden-lg-up">Apps</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-user nav-icon"></i>
+                <p class="hidden-lg-up">Profile</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-settings nav-icon"></i>
+                <p class="hidden-lg-up">Settings</p>
+              </a>
+            </li>
+            <li class="separator hidden-lg-up"></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <form class="form">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-body p-2">
+                        <div class="form-group mb-0">
+                          <label>เลขที่ใบแจ้งผลิต:</label>
+                          <span>M2018120100001</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body p-2">
+                        <div class="form-group mb-0">
+                          <label>วันที่สั่งซื้อ: &nbsp;</label>
+                          <span>1/12/2561</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body p-2">
+                        <div class="form-group mb-0">
+                          <label>กำหนดส่ง: </label>
+                          <span>31/12/2561</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#" data-toggle="tab" data-target="#tabone">รายละเอียดสายพาน</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="tab" data-target="#tabtwo">รายละเอียดลูกค้า</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="tab" data-target="#tabthree">หมายเหตุ</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card-body p-2">
+                        <div class="tab-content mt-2">
+                          <div class="tab-pane fade show active" id="tabone" role="tabpanel">
+                            <p> บั้ง สีดำ 40 นิ้ว x 5 ชั้น EP 120 / เกรด M (M/PI) </p>
+                            <p> หนา: 3/2 มม. หนารวม: 10 มม. / ยาว 15 เมตร, ต่อกลม, ตีตรา MUI </p>
+                          </div>
+                          <div class="tab-pane fade" id="tabtwo" role="tabpanel">
+                            <p class=""> ชื่อลูกค้า: ชลบุรี เอ็มยูไอ ไพศาล </p>
+                            <p> ประเภทลูกค้า: ลูกค้าพิเศษ </p>
+                          </div>
+                          <div class="tab-pane fade" id="tabthree" role="tabpanel">
+                            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                              a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#" data-toggle="tab" data-target="#para1"> ข้อมูลการอบ </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#" data-toggle="tab" data-target="#para2"> พนักงานประจำเครื่อง </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="tab" data-target="#para3"> พารามิเตอร์เครื่อง </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card-body p-2">
+                        <div class="tab-content mt-2">
+                          <div class="tab-pane fade show active" id="para1" role="tabpanel">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>ระยะที่</th>
+                                  <th>เวลาเริ่ม</th>
+                                  <th>เวลาสิ้นสุด</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>5 เมตร</td>
+                                  <td>08:30</td>
+                                  <td>08:40
+                                    <br> </td>
+                                  <td>
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>10 เมตร</td>
+                                  <td>08:45</td>
+                                  <td>08:55</td>
+                                  <td>
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-list"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-xs">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <hr>
+                            <div class="card-body d-flex justify-content-between p-2">
+                              <div class="flex-grow-1">
+                                <button data-target="#ss_start" type="button" class="btn btn-default" data-toggle="tab"> เริ่มต้นโบว์ </button>
+                                <button data-target="#ss_end" type="button" class="btn btn-default" data-toggle="tab"> สิ้นสุดโบว์ </button>
+                              </div>
+                              <div>
+                                <button class="btn btn-primary"> บันทึกเสร็จงาน </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade px-2" id="para2" role="tabpanel">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="firstName">พนักงานยางดิบ 1</label>
+                                  <input type="text" class="form-control"> </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="firstName">พนักงานยางดิบ 2</label>
+                                  <input type="text" class="form-control"> </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="firstName">พนักงานยางสุก 1</label>
+                                  <input type="text" class="form-control"> </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="firstName">พนักงานยางสุก 2</label>
+                                  <input type="text" class="form-control"> </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="firstName">พนักงานยางสุก 3</label>
+                                  <input type="text" class="form-control" aria-label="..."> </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="firstName">ผู้ควบคุมกะ</label>
+                                  <input type="text" class="form-control" aria-label="..."> </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade px-2" id="para3" role="tabpanel">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label> เครื่อง </label>
+                                <select class="form-control">
+                                  <option>#1 - เครือง 1700</option>
+                                  <option>#2 - เครื่อง 2200</option>
+                                  <option>#3 - เครื่อง 1400</option>
+                                </select>
+                              </div>
+                              <div class="col-md-3">
+                                <label> กะทำงาน </label>
+                                <select class="form-control">
+                                  <option>กะ 1</option>
+                                  <option>กะ 2</option>
+                                </select>
+                              </div>
+                              <div class="col-md-3">
+                                <label> แรงดันไอน้ำ </label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control">
+                                  <div class="input-group-append px-2 pt-2 border-1 text-muted"> kg. </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <label> แรงอัดเครื่อง </label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control">
+                                  <div class="input-group-append px-2 pt-2 border-1 text-muted"> kg. </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label> เวลาอบ </label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control">
+                                  <div class="input-group-append px-2 pt-2 border-1 text-muted"> นาที </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <label> เผื่อแบบ </label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control"> </div>
+                              </div>
+                              <div class="col-md-3">
+                                <label> ขนาดเส้นมิล </label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control"> </div>
+                              </div>
+                              <div class="col-md-3">
+                                <label> จำนวนเลนที่อบ </label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control"> </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label> ความยาวก่อนอบ </label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control"> </div>
+                              </div>
+                              <div class="col-md-3">
+                                <label> ความยาวที่อบได้ </label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control"> </div>
+                              </div>
+                              <div class="col-md-3">
+                                <label> ความยาวรวม </label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control"> </div>
+                              </div>
+                              <div class="col-md-3">
+                                <label> น้ำหนักยาง </label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control">
+                                  <div class="input-group-append px-2 pt-2 border-1 text-muted"> kg. </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content">
+                  <div class="card tab-pane fade show active" id="ss_start" role="tabpanel">
+                    <div class="card-header"> เริ่มต้นโบว์ #3</div>
+                    <div class="card-body p-2">
+                      <p class="card-title px-2">สภาพแวดล้อม</p>
+                      <div class="row px-2">
+                        <div class="col-md-4">
+                          <label> แรงดันไอน้ำ </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> kg. </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label> อุณหภูมิ </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> °C </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="mt-0">
+                      <p class="card-title px-2">ก่อนอบ</p>
+                      <div class="row px-2">
+                        <div class="col-md-4">
+                          <label>หน้ากว้าง</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> นิ้ว </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label> ความหนา-ด้านซ้าย </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> มิล </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label> ความหนา-ด้านขวา </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> มิล </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="mt-0">
+                      <div class="d-flex justify-content-end">
+                        <div class="px-2">
+                          <button class="btn btn-warning"> บันทึก </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card tab-pane active" id="ss_end" role="tabpanel">
+                    <div class="card-header"> สิ้นสุดโบว์ #3</div>
+                    <div class="card-body p-2">
+                      <p class="card-title px-2">หลังอบ</p>
+                      <div class="row px-2">
+                        <div class="col-md-4">
+                          <label>หน้ากว้าง</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> นิ้ว </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label> ความหนา-ด้านซ้าย </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> มิล </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label> ความหนา-ด้านขวา </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> มิล </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="mt-0">
+                      <p class="card-title px-2">ชนิดและจำนวนที่เกิดปัญหา</p>
+                      <div class="row px-2">
+                        <div class="col-md-4">
+                          <label> แผลที่ขอบ </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> จุด </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label> ยางไม่เต็ม </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> จุด </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label> ผ้าแดง </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> จุด </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row px-2">
+                        <div class="col-md-4">
+                          <label> ขี้กลาก </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> จุด </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label> ฝองอากาศ </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> จุด </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label>ตีตรา</label>
+                          <div class="input-group  border-1">
+                            <div class="form-check mx-auto py-2">
+                              <input type="checkbox" id="exampleCheck1" value="on" class="form-check-input">
+                              <label class="form-check-label" for="exampleCheck1">ตีตรา MUI</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="mt-0">
+                      <div class="d-flex justify-content-end">
+                        <div class="px-2">
+                          <button class="btn btn-warning"> บันทึก </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--end row-->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <p class="copyright float-right"> ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <!-- <div class="text-center bg-dark" style="background-image: url(&quot;none&quot;);">
+      <div class="container-fluid">
+        <div class="row"> </div>
+      </div>
+    </div> -->
+  <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/tether.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/material.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+  <!-- Forms Validations Plugin -->
+  <script src="../../assets/vendors/jquery.validate.min.js"></script>
+  <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+  <script src="../../assets/vendors/moment.min.js"></script>
+  <!--  Charts Plugin -->
+  <script src="../../assets/vendors/chartist.min.js"></script>
+  <!--  Plugin for the Wizard -->
+  <script src="../../assets/vendors/jquery.bootstrap-wizard.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../../assets/vendors/bootstrap-notify.js"></script>
+  <!-- DateTimePicker Plugin -->
+  <script src="../../assets/vendors/bootstrap-datepicker.min.js"></script>
+  <!-- Vector Map plugin -->
+  <script src="../../assets/vendors/jquery-jvectormap.js"></script>
+  <!-- Sliders Plugin -->
+  <script src="../../assets/vendors/nouislider.min.js"></script>
+  <!-- Select Plugin -->
+  <script src="../../assets/vendors/jquery.select-bootstrap.js"></script>
+  <!--  DataTables.net Plugin    -->
+  <script src="../../assets/vendors/jquery.dataTables.min.js"></script>
+  <script src="../../assets/vendors/dataTables.bootstrap4.js"></script>
+  <!-- Sweet Alert 2 plugin -->
+  <script src="../../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
+  <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="../../assets/vendors/jasny-bootstrap.min.js"></script>
+  <!--  Full Calendar Plugin    -->
+  <script src="../../assets/vendors/fullcalendar.min.js"></script>
+  <!-- TagsInput Plugin -->
+  <script src="../../assets/vendors/jquery.tagsinput.js"></script>
+  <!-- Material Dashboard javascript methods -->
+  <script src="../../assets/js/inspire.js"></script>
+  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../../assets/js/demo.js"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
+</body>
+
+</html>

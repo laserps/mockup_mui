@@ -162,7 +162,7 @@
           <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">งานอบสายพาน(ตั้งค่า)</a>
+          <a class="navbar-brand" href="#">ตั้งค่าการอบสายพาน</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
@@ -216,17 +216,39 @@
               <form class="form">
                 <div class="card">
                   <div class="card-body p-2">
-                    <h4 class="mt-1">พนักงานประจำเครื่อง</h4>
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label>วันที่</label>
+                          <input class="form-control"> </div>
+                      </div>
+                      <div class="col-md-4">
                         <div class="form-group">
                           <label for="firstName">เครื่อง</label>
                           <select class="form-control">
                             <option value="">เลือก</option>
+                            <option value="1">เครื่อง 1 - 1500</option>
+                            <option value="2">เครื่อง 2 - 2000</option>
+                            <option value="3">เครื่อง 3 - 1300</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="firstName">กะทำงาน</label>
+                          <select class="form-control">
+                            <option value="">เลือก</option>
+                            <option value="1">กะ 1 - 1500</option>
+                            <option value="2">กะ 2 - 2000</option>
                           </select>
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body p-2">
+                    <h4 class="mt-1">พนักงานประจำเครื่อง</h4>
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
@@ -255,48 +277,12 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="firstName">พนักงานยางสุก</label>
-                          <div class="input-group">
-                            <input type="text" class="form-control" aria-label="...">
-                            <div class="input-group-btn">
-                              <ul class="dropdown-menu dropdown-menu-right" style="z-index: 1000;">
-                                <li>
-                                  <a href="#">มม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ซม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ม.</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <!-- /btn-group -->
-                          </div>
-                          <!-- /input-group -->
-                        </div>
+                          <input type="text" class="form-control" aria-label="..."> </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="firstName">ผู้ควบคุมกะ</label>
-                          <div class="input-group">
-                            <input type="text" class="form-control" aria-label="...">
-                            <div class="input-group-btn">
-                              <ul class="dropdown-menu dropdown-menu-right" style="z-index: 1000;">
-                                <li>
-                                  <a href="#">มม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ซม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ม.</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <!-- /btn-group -->
-                          </div>
-                          <!-- /input-group -->
-                        </div>
+                          <input type="text" class="form-control" aria-label="..."> </div>
                       </div>
                     </div>
                   </div>
@@ -305,138 +291,67 @@
                   <div class="card-body p-2">
                     <h4 class="mt-1" contenteditable="true">การตั้งค่าพารามิเตอร์เครื่อง</h4>
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">แรงดันไอน้ำ</label>
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">แรงอัดเครื่อง</label>
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">เวลาอบ</label>
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">เผื่อแบบ</label>
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">ขนาดเส้นมิล</label>
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">จำนวนเลนที่อบ</label>
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">ความยาวก่อนอบ</label>
+                      <div class="col-md-3">
+                        <label> แรงดันไอน้ำ </label>
+                        <div class="input-group">
                           <input type="text" class="form-control">
-                          <div class="input-group">
-                            <div class="input-group-btn">
-                              <ul class="dropdown-menu dropdown-menu-right">
-                                <li>
-                                  <a href="#">มม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ซม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ม.</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <!-- /btn-group -->
-                          </div>
-                          <!-- /input-group -->
+                          <div class="input-group-append px-2 pt-2 border-1 text-muted"> kg. </div>
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">ความยาวที่อบได้</label>
+                      <div class="col-md-3">
+                        <label> แรงอัดเครื่อง </label>
+                        <div class="input-group">
                           <input type="text" class="form-control">
-                          <div class="input-group">
-                            <div class="input-group-btn">
-                              <ul class="dropdown-menu dropdown-menu-right">
-                                <li>
-                                  <a href="#">มม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ซม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ม.</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <!-- /btn-group -->
-                          </div>
-                          <!-- /input-group -->
+                          <div class="input-group-append px-2 pt-2 border-1 text-muted"> kg. </div>
                         </div>
-                        <!-- /.col-lg-6 -->
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">ความยาวรวม</label>
-                          <div class="input-group">
-                            <input type="text" class="form-control" aria-label="...">
-                            <div class="input-group-btn">
-                              <ul class="dropdown-menu dropdown-menu-right" style="z-index: 1000;">
-                                <li>
-                                  <a href="#">มม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ซม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ม.</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <!-- /btn-group -->
-                          </div>
-                          <!-- /input-group -->
+                      <div class="col-md-3">
+                        <label> เวลาอบ </label>
+                        <div class="input-group">
+                          <input type="text" class="form-control">
+                          <div class="input-group-append px-2 pt-2 border-1 text-muted"> นาที </div>
                         </div>
-                        <!-- /.col-lg-6 -->
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">น้ำหนักยาง</label>
-                          <div class="input-group">
-                            <input type="text" class="form-control" aria-label="...">
-                            <div class="input-group-btn">
-                              <ul class="dropdown-menu dropdown-menu-right" style="z-index: 1000;">
-                                <li>
-                                  <a href="#">มม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ซม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ม.</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <!-- /btn-group -->
-                          </div>
-                          <!-- /input-group -->
+                      <div class="col-md-3">
+                        <label> เผื่อแบบ </label>
+                        <div class="input-group">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label> ขนาดเส้นมิล </label>
+                        <div class="input-group">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label> จำนวนเลนที่อบ </label>
+                        <div class="input-group">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <label> ความยาวก่อนอบ </label>
+                        <div class="input-group">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label> ความยาวที่อบได้ </label>
+                        <div class="input-group">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label> ความยาวรวม </label>
+                        <div class="input-group">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label> น้ำหนักยาง </label>
+                        <div class="input-group">
+                          <input type="text" class="form-control">
+                          <div class="input-group-append px-2 pt-2 border-1 text-muted"> kg. </div>
                         </div>
-                        <!-- /.col-lg-6 -->
                       </div>
                     </div>
                   </div>

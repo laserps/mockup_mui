@@ -164,7 +164,7 @@
           <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">งานขาย</a>
+          <a class="navbar-brand" href="#">งานขาย - บันทึกคำสั่งตัดสต็อก</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
@@ -216,64 +216,62 @@
                 <div class="card-body p-2">
 -->
               <form class="form">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
+                <div class="card">
+                  <div class="card-body p-2">
+                    <div class="row">
+                      <div class="col-md-3">
                         <div class="form-group">
                           <label>วันที่</label>
                           <input type="date" class="form-control"> </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
+                      <div class="col-md-3">
                         <div class="form-group">
                           <label>กำหนดส่ง</label>
                           <input type="date" class="form-control"> </div>
                       </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="pull-right"> เลขที่ใบสั่งตัดสต็อก </label>
+                          <div class="input-group border-1 text-center">
+                            <span class="form-control font-xl">MK61060123</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-body p-2">
+                  <div class="card-body p-3">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-12">
                         <div class="form-group">
                           <label for="firstName">ชื่อลูกค้า</label>
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">นามสกุลลูกค้า</label>
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">ประเภทลูกค้า</label>
                           <select class="form-control">
-                            <option value="ประเภทหนึ่ง">ประเภทหนึ่ง</option>
-                            <option value="ประเภทสอง">ประเภทสอง</option>
-                            <option value="ประเภทสาม">ประเภทสาม</option>
-                            <option value="ประเภทสี่">ประเภทสี่</option>
+                            <option value="ลูกค้า AAAAA">ลูกค้า AAAAA</option>
+                            <option value="ลูกค้า BBBBB">ลูกค้า BBBBB</option>
+                            <option value="ลูกค้า CCCCC">ลูกค้า CCCCC</option>
+                            <option value="ลูกค้า DDDDD">ลูกค้า DDDDD</option>
+                            <option value="ลูกค้า EEEEE">ลูกค้า EEEEE</option>
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-6">
+                    </div>
+                    <div class="row pt-3">
+                      <div class="col-md-8">
                         <div class="form-group">
                           <label for="firstName">สถานที่ส่งมอบ</label>
                           <input type="text" class="form-control"> </div>
                       </div>
+                      <div class="col-md-4">
+                        <label> อ้างอิง P/O No. </label>
+                        <input type="text" class="form-control"> </div>
                     </div>
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-body p-2">
-                    <div class="row">
-                      <div class="col-md-6">
+                  <div class="card-body p-3">
+                    <div class="row pt-1">
+                      <div class="col-md-3">
                         <div class="form-group">
                           <label for="firstName">ชนิดสายพาน</label>
                           <select class="form-control">
@@ -282,7 +280,7 @@
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-2">
                         <div class="form-group">
                           <label for="firstName">สี</label>
                           <select class="form-control">
@@ -292,8 +290,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
+                    <div class="row pt-3">
+                      <div class="col-md-2">
                         <div class="form-group">
                           <label for="firstName">เกรดยางบน</label>
                           <select class="form-control">
@@ -302,7 +300,7 @@
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-2">
                         <div class="form-group">
                           <label for="firstName">เกรดยางล่าง</label>
                           <select class="form-control">
@@ -311,9 +309,37 @@
                           </select>
                         </div>
                       </div>
+                      <div class="col-md-1"> &nbsp; </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label for="firstName">หนาบน</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control" aria-label="...">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> มิล </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label for="firstName">หนาล่าง</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control" aria-label="...">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> มิล </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label for="firstName">หนารวม</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control" aria-label="...">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> มิล </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-3">
                         <div class="form-group">
                           <label for="firstName">ชนิดผ้า</label>
                           <select class="form-control">
@@ -325,97 +351,24 @@
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-2">
                         <div class="form-group">
                           <label for="firstName">ชั้นผ้า</label>
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">หนาบน</label>
-                          <div class="input-group">
-                            <input type="text" class="form-control" aria-label="...">
-                            <div class="input-group-btn">
-                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
-                                <span class="caret"></span>
-                              </button>
-                              <ul class="dropdown-menu dropdown-menu-right">
-                                <li>
-                                  <a href="#">มม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ซม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ม.</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <!-- /btn-group -->
-                          </div>
-                          <!-- /input-group -->
+                          <select class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" selected="">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
                         </div>
-                        <!-- /.col-lg-6 -->
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">หนาล่าง</label>
-                          <div class="input-group">
-                            <input type="text" class="form-control" aria-label="...">
-                            <div class="input-group-btn">
-                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
-                                <span class="caret"></span>
-                              </button>
-                              <ul class="dropdown-menu dropdown-menu-right">
-                                <li>
-                                  <a href="#">มม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ซม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ม.</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <!-- /btn-group -->
-                          </div>
-                          <!-- /input-group -->
-                        </div>
-                        <!-- /.col-lg-6 -->
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">หนารวม</label>
-                          <div class="input-group">
-                            <input type="text" class="form-control" aria-label="...">
-                            <div class="input-group-btn">
-                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
-                                <span class="caret"></span>
-                              </button>
-                              <ul class="dropdown-menu dropdown-menu-right" style="z-index: 1000;">
-                                <li>
-                                  <a href="#">มม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ซม.</a>
-                                </li>
-                                <li>
-                                  <a href="#">ม.</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <!-- /btn-group -->
-                          </div>
-                          <!-- /input-group -->
-                        </div>
-                        <!-- /.col-lg-6 -->
-                      </div>
-                      <div class="col-md-6">
+                      <div class="col-md-4">
                         <div class="form-group">
                           <label for="firstName">ความยาว</label>
                           <div class="input-group">
@@ -436,134 +389,155 @@
                                 </li>
                               </ul>
                             </div>
-                            <!-- /btn-group -->
                           </div>
-                          <!-- /input-group -->
                         </div>
-                        <!-- /.col-lg-6 -->
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
+                      <div class="col-md-3">
                         <div class="form-group">
-                          <label for="firstName">การต่อสายพาน</label>
+                          <label for="firstName"> การต่อสายพาน </label>
                           <select class="form-control">
-                            <option value="ประเภทหนึ่ง">ตัดยาว</option>
-                            <option value="ประเภทสอง">ต่อกลม</option>
+                            <option value="1">ตัดยาว</option>
+                            <option value="2">ต่อกลม</option>
                           </select>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
+                    <!-- /.row -->
+                    <div class="row">
+                      <div class="col-md-3">
                         <div class="form-group">
-                          <label for="firstName">จำนวน</label>
-                          <input type="text" class="form-control"> </div>
+                          <label for="firstName"> จำนวนเส้น </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> เส้น </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div class="form-group">
+                      <div class="col-md-3">
+                        <div class="form-group mb-0">
                           <label for="firstName">ตีตรา</label>
                         </div>
-                        <div class="form-check">
-                          <input type="checkbox" id="exampleCheck1">
+                        <div class="form-check border-1 p-2">
+                          <input type="checkbox" id="exampleCheck1" value="on">
                           <label class="form-check-label" for="exampleCheck1">ตีตรา MUI</label>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
+                    <!-- /.row -->
+                    <div class="row">
+                      <div class="col-md-4">
                         <div class="form-group">
-                          <label for="firstName">หมายเหตุ</label>
+                          <label for="firstName"> ราคา/เส้น </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control text-right" placeholder="###,###.##">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> บาท </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="firstName"> รวมเป็นเงิน </label>
+                          <div class="input-group">
+                            <input type="text" class="form-control text-right" placeholder="###,###.##">
+                            <div class="input-group-append px-2 pt-2 border-1 text-muted"> บาท </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="firstName"> หมายเหตุส่วนลด </label>
+                          <input type="text" class="form-control" placeholder="30+5%"> </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label> หมายเหตุ </label>
                           <input type="text" class="form-control"> </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <button type="submit" class="btn btn-light pull-right">บันทึก</button>
+                    <!-- /.row -->
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="d-flex justify-content-between">
+                          <div class="flex-grow-1">
+                            <button type="button" class="btn btn-light"> พิมพ์ </button>
+                          </div>
+                          <div class="">
+                            <button type="submit" class="btn btn-light">บันทึก</button>
+                            <button type="submit" class="btn btn-light">บันทึกและพิมพ์</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <!-- /.card-body -->
                 </div>
+                <!-- /.card -->
               </form>
-              <!--
-                </div>   
+              <div class="row">
+                <div class="col-md-12 px-3">
+                  <span class="text-muted">พิมพ์ครั้งสุดท้ายเมื่อ: xx/xx/xxxx</span>
+                </div>
               </div>
--->
             </div>
           </div>
         </div>
+        <footer class="footer">
+          <div class="container">
+            <p class="copyright float-right"> ©
+              <script>
+                document.write(new Date().getFullYear())
+              </script>
+              <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
+            </p>
+          </div>
+        </footer>
       </div>
-      <footer class="footer">
-        <div class="container">
-          <p class="copyright float-right"> ©
-            <script>
-              document.write(new Date().getFullYear())
-            </script>
-            <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
-          </p>
-        </div>
-      </footer>
     </div>
+    <!--   Core JS Files   -->
+    <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../../assets/vendors/tether.min.js" type="text/javascript"></script>
+    <script src="../../assets/vendors/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../assets/vendors/material.min.js" type="text/javascript"></script>
+    <script src="../../assets/vendors/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+    <!-- Forms Validations Plugin -->
+    <script src="../../assets/vendors/jquery.validate.min.js"></script>
+    <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+    <script src="../../assets/vendors/moment.min.js"></script>
+    <!--  Charts Plugin -->
+    <script src="../../assets/vendors/chartist.min.js"></script>
+    <!--  Plugin for the Wizard -->
+    <script src="../../assets/vendors/jquery.bootstrap-wizard.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="../../assets/vendors/bootstrap-notify.js"></script>
+    <!-- DateTimePicker Plugin -->
+    <script src="../../assets/vendors/bootstrap-datepicker.min.js"></script>
+    <!-- Vector Map plugin -->
+    <script src="../../assets/vendors/jquery-jvectormap.js"></script>
+    <!-- Sliders Plugin -->
+    <script src="../../assets/vendors/nouislider.min.js"></script>
+    <!-- Select Plugin -->
+    <script src="../../assets/vendors/jquery.select-bootstrap.js"></script>
+    <!--  DataTables.net Plugin    -->
+    <script src="../../assets/vendors/jquery.dataTables.min.js"></script>
+    <script src="../../assets/vendors/dataTables.bootstrap4.js"></script>
+    <!-- Sweet Alert 2 plugin -->
+    <script src="../../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
+    <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+    <script src="../../assets/vendors/jasny-bootstrap.min.js"></script>
+    <!--  Full Calendar Plugin    -->
+    <script src="../../assets/vendors/fullcalendar.min.js"></script>
+    <!-- TagsInput Plugin -->
+    <script src="../../assets/vendors/jquery.tagsinput.js"></script>
+    <!-- Material Dashboard javascript methods -->
+    <script src="../../assets/js/inspire.js"></script>
+    <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+      <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+    </pingendo>
   </div>
-  <!--   Core JS Files   -->
-  <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
-  <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
-  <script src="../../assets/vendors/tether.min.js" type="text/javascript"></script>
-  <script src="../../assets/vendors/bootstrap.min.js" type="text/javascript"></script>
-  <script src="../../assets/vendors/material.min.js" type="text/javascript"></script>
-  <script src="../../assets/vendors/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
-  <!-- Forms Validations Plugin -->
-  <script src="../../assets/vendors/jquery.validate.min.js"></script>
-  <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
-  <script src="../../assets/vendors/moment.min.js"></script>
-  <!--  Charts Plugin -->
-  <script src="../../assets/vendors/chartist.min.js"></script>
-  <!--  Plugin for the Wizard -->
-  <script src="../../assets/vendors/jquery.bootstrap-wizard.js"></script>
-  <!--  Notifications Plugin    -->
-  <script src="../../assets/vendors/bootstrap-notify.js"></script>
-  <!-- DateTimePicker Plugin -->
-  <script src="../../assets/vendors/bootstrap-datepicker.min.js"></script>
-  <!-- Vector Map plugin -->
-  <script src="../../assets/vendors/jquery-jvectormap.js"></script>
-  <!-- Sliders Plugin -->
-  <script src="../../assets/vendors/nouislider.min.js"></script>
-  <!-- Select Plugin -->
-  <script src="../../assets/vendors/jquery.select-bootstrap.js"></script>
-  <!--  DataTables.net Plugin    -->
-  <script src="../../assets/vendors/jquery.dataTables.min.js"></script>
-  <script src="../../assets/vendors/dataTables.bootstrap4.js"></script>
-  <!-- Sweet Alert 2 plugin -->
-  <script src="../../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
-  <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
-  <script src="../../assets/vendors/jasny-bootstrap.min.js"></script>
-  <!--  Full Calendar Plugin    -->
-  <script src="../../assets/vendors/fullcalendar.min.js"></script>
-  <!-- TagsInput Plugin -->
-  <script src="../../assets/vendors/jquery.tagsinput.js"></script>
-  <!-- Material Dashboard javascript methods -->
-  <script src="../../assets/js/inspire.js"></script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
-    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
-  </pingendo>
 </body>
 
 </html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Inspire - Bootstrap Admin Dashboard Template</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <meta name="viewport" content="width=device-width">
+  <!-- Bootstrap core CSS     -->
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+  <!--  Paper Dashboard CSS    -->
+  <link href="../../assets/css/inspire.css" rel="stylesheet">
+  <!--  CSS for Demo Purpose, don't include it in your project     -->
+  <!-- <link href="../../assets/css/demo.css" rel="stylesheet"> -->
+  <!--     Fonts and icons     -->
+  <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../assets/css/font-muli.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/css/themify-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="mui.css"> </head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#" class="simple-text">
+          <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
+      </div>
+      <div class="logo logo-mini">
+        <a href="#" class="simple-text"> Work </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav flex-column">
+          <li class="d-flex flex-column">
+            <a href="index.html">
+              <i class="nav-icon"></i>
+              <p>หน้าเข้าสู่ระบบ</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="2_user_dashboard.html">
+              <i class="nav-icon"></i>
+              <p>หน้าหลักผู้ใช้</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="1_sale_twocolumn.html">
+              <i class="nav-icon"></i>
+              <p>งานขาย</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="3_planing.html">
+              <i class="nav-icon"></i>
+              <p>วางแผนผลิต</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="8_cut.html">
+              <i class="nav-icon"></i>
+              <p>ตัดผ้า</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="9_Glue_Coating.html">
+              <i class="nav-icon"></i>
+              <p>เคลือบน้ำกาว</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="10_articulate_v2.html">
+              <i class="nav-icon"></i>
+              <p>ประกบผ้า</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="11_calender.html">
+              <i class="nav-icon"></i>
+              <p>เคลือบผิว</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column active">
+            <a href="2_bake_search.html">
+              <i class="nav-icon"></i>
+              <p>รายการอบสายพาน</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="2_bake_menu.html">
+              <i class="nav-icon"></i>
+              <p>งานอบสายพาน(หน้าหลัก)</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="2_bake_setting.html">
+              <i class="nav-icon"></i>
+              <p>งานอบสายพาน(ตั้งค่า)</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="2_bake_save.html">
+              <i class="nav-icon"></i>
+              <p>งานอบสายพาน(บันทึกการอบสายพาน)</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a data-toggle="collapse" href="#tables" class="nav-link collapsed" aria-expanded="false">
+              <p>คลังสินค้า
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="2b94cf34-2f02-ad93-3c9a-fec0a52844f9">
+                <li>
+                  <a class="nav-link" href="4_Stock_Compound_NonCompound.html">คลังสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_In_Stock.html">นำเข้าคลังสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_Out_Stock.html">นำออกคลังสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_In_Compound.html">นำเข้า Compound</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_Out_Compound.html">นำออก Compound</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_In_NonCompound.html">นำเข้า Non Compound</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_Out_NonCompound.html">นำออก Non Compound</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <nav class="navbar navbar-default navbar-toggleable-md navbar-inverse">
+        <div class="navbar-minimize">
+          <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+            <i class="ti-arrow-left"></i>
+          </button>
+        </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">ค้นหาข้อมูล : รายการขาย
+            <br> </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarItems">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ti-bell nav-icon"></i>
+                <span class="notification">6</span>
+                <p class="hidden-lg-up"> Notifications
+                  <i class="fa fa-sort-desc submenu-toggle"></i>
+                </p>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="notificationList">
+                <a class="dropdown-item" href="#">You have 5 new messages</a>
+                <a class="dropdown-item" href="#">You're now friend with Mike</a>
+                <a class="dropdown-item" href="#">Wish Mary on her birthday!</a>
+                <a class="dropdown-item" href="#">5 warnings in Server Console</a>
+                <a class="dropdown-item" href="#">Jane completed 'Induction Training'</a>
+                <a class="dropdown-item" href="#">'Prepare Marketing Report' is overdue</a>
+              </div>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-layout-grid3-alt nav-icon"></i>
+                <p class="hidden-lg-up">Apps</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-user nav-icon"></i>
+                <p class="hidden-lg-up">Profile</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-settings nav-icon"></i>
+                <p class="hidden-lg-up">Settings</p>
+              </a>
+            </li>
+            <li class="separator hidden-lg-up"></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card mb-0">
+                <div class="card-body p-2">
+                  <div class="d-flex justify-content-between">
+                    <div class="flex-grow-1">
+                      <button class="btn btn-default"> แสดงตัวกรอง
+                        <span class="fa fa-caret-down"></span>
+                      </button>
+                    </div>
+                    <div>
+                      <button class="btn btn-primary">
+                        <span class="fa fa-plus"></span> เพิ่มรายการขาย </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card mt-0 top-border">
+                <div class="card-body p-2">
+                  <div class="d-flex flex-row align-items-baseline">
+                    <div class="p-2 form-group col-md-4">
+                      <label class="col-form-label"> เลขที่ใบแจ้งผลิต </label>
+                      <input type="text" class="form-control" placeholder="MKxxxxxxx"> </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-baseline top-border">
+                    <div class="p-2 form-group col-md-3">
+                      <label for="inputFromDate" class="col-form-label">ช่วงวันที่</label>
+                      <input type="text" class="form-control" id="inputFromDate" placeholder="ตั้งแต่วันที่"> </div>
+                    <div class="p-2 form-group col-md-3">
+                      <label class="col-form-label">&nbsp;</label>
+                      <input type="text" class="form-control" id="inputToDate" placeholder="จนถึงวันที่"> </div>
+                    <div class="p-2 form-group col-md-3">
+                      <label class="col-form-label" for="inputCustomer">ลูกค้า</label>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> - เลือก - </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">AAA AAAAAA</a>
+                          <a class="dropdown-item" href="#">BBBBB BBBBBBBB</a>
+                          <a class="dropdown-item" href="#">CCC CCCCCCCC</a>
+                          <a class="dropdown-item" href="#">DDDD DDDDDDDDD</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-baseline top-border">
+                    <div class="p-2 form-group">
+                      <label for="inputBeltType" class="">ประเภทสายพาน</label>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> - เลือก - </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">ทุกประเภท</a>
+                          <a class="dropdown-item" href="#">เรียบ</a>
+                          <a class="dropdown-item" href="#">บั้ง</a>
+                          <a class="dropdown-item" href="#">กลมสำเร็จ</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 form-group">
+                      <label for="inputColor" class="col-form-label">สี</label>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> - เลือก - </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">ดำ</a>
+                          <a class="dropdown-item" href="#">ขาว</a>
+                          <a class="dropdown-item" href="#">อื่นๅ</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-baseline top-border">
+                    <div class="p-2 form-group">
+                      <label for="inputBeltWidth" class="col-form-label">หน้ากว้าง</label>
+                      <input type="text" class="form-control" id="inputBeltWidth" placeholder="ระบุหน้ากว้าง"> </div>
+                    <div class="p-2 form-group">
+                      <label class="col-form-label">&nbsp;</label>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> มม. </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">มม.</a>
+                          <a class="dropdown-item" href="#">นิ้ว</a>
+                          <a class="dropdown-item" href="#">ซม.</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 form-group">
+                      <label for="inputFabric" class="col-form-label">ชนิดผ้าใบ</label>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> - เลือก - </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">EP 120</a>
+                          <a class="dropdown-item" href="#">EP 160</a>
+                          <a class="dropdown-item" href="#">EP 200</a>
+                          <a class="dropdown-item" href="#">EP 250</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 form-group">
+                      <label for="inputPly" class="col-form-label">จำนวนชั้นผ้า</label>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> - เลือก - </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">1</a>
+                          <a class="dropdown-item" href="#">2</a>
+                          <a class="dropdown-item" href="#">3</a>
+                          <a class="dropdown-item" href="#">4</a>
+                          <a class="dropdown-item" href="#">5</a>
+                          <a class="dropdown-item" href="#">6</a>
+                          <a class="dropdown-item" href="#">7</a>
+                          <a class="dropdown-item" href="#">8</a>
+                          <a class="dropdown-item" href="#">9</a>
+                          <a class="dropdown-item" href="#">10</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-baseline top-border">
+                    <div class="p-2 form-group">
+                      <label for="inputGrade" class="col-form-label">เกรดยาง</label>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> - เลือก - </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">P</a>
+                          <a class="dropdown-item" href="#">N</a>
+                          <a class="dropdown-item" href="#">M</a>
+                          <a class="dropdown-item" href="#">OR-1</a>
+                          <a class="dropdown-item" href="#">OR-2</a>
+                          <a class="dropdown-item" href="#">HR-100</a>
+                          <a class="dropdown-item" href="#">HR-120</a>
+                          <a class="dropdown-item" href="#">HR-150</a>
+                          <a class="dropdown-item" href="#">ทดกรด/ต่าง</a>
+                          <a class="dropdown-item" href="#">ยิงทราย</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 form-group col-md-2">
+                      <label for="inputTotalThick" class="col-form-label">หนารวม</label>
+                      <input type="text" class="form-control" id="inputTotalThick" placeholder="ระบุหนารวม"> </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-baseline top-border">
+                    <div class="p-2 form-group col-md-2">
+                      <label for="inputLength" class="col-form-label">ความยาว</label>
+                      <input type="text" class="form-control" id="inputLength" placeholder="ตั้งแต่"> </div>
+                    <div class="p-2 form-group col-md-2">
+                      <label class="col-form-label">&nbsp;</label>
+                      <input type="text" class="form-control" id="inputLength" placeholder="จนถึง"> </div>
+                    <div class="p-2 form-group">
+                      <label class="col-form-label">&nbsp;</label>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> เมตร </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">เมตร</a>
+                          <a class="dropdown-item" href="#">เซ็นต์.</a>
+                          <a class="dropdown-item" href="#">นิ้ว</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 form-group">
+                      <label for="inputEndType" class="col-form-label">ตัด/ต่อ</label>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> - เลือก - </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">ตัดยาว</a>
+                          <a class="dropdown-item" href="#">ต่อกลม</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex flex-row align-items-baseline justify-content-end">
+                    <div class="p-2 form-group">
+                      <button class="btn btn-success">เริ่มค้นหา</button>
+                      <button class="btn btn-default">รีเซ็ต</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body p-2">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="lead">ผลการค้นหา</p>
+                    </div>
+                    <div class="col-md-6 text-right"> </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <table class="table">
+                        <thead class="font-smr">
+                          <tr>
+                            <th>#</th>
+                            <th>เลขที่แจ้งผลิต</th>
+                            <th>รายละเอียด</th>
+                            <th>ลูกค้า</th>
+                            <th>ผลิตเมือ</th>
+                            <th>การกระทำ</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>XXXXXXXX</td>
+                            <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                            <td>AAAA</td>
+                            <td>0</td>
+                            <td contenteditable="true">
+                              <button class="btn btn-info btn-xs">
+                                <i class="fa fa-list"></i>
+                              </button>
+                              <button class="btn btn-warning btn-xs">
+                                <i class="fa fa-edit"></i>
+                              </button>
+                              <button class="btn btn-danger btn-xs">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>XXXXXXXX</td>
+                            <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                            <td>AAAA</td>
+                            <td>500</td>
+                            <td contenteditable="true">
+                              <button class="btn btn-info btn-xs">
+                                <i class="fa fa-list"></i>
+                              </button>
+                              <button class="btn btn-warning btn-xs">
+                                <i class="fa fa-edit"></i>
+                              </button>
+                              <button class="btn btn-danger btn-xs">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>XXXXXXXX</td>
+                            <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                            <td>BBBB</td>
+                            <td>200</td>
+                            <td contenteditable="true">
+                              <button class="btn btn-info btn-xs">
+                                <i class="fa fa-list"></i>
+                              </button>
+                              <button class="btn btn-warning btn-xs">
+                                <i class="fa fa-edit"></i>
+                              </button>
+                              <button class="btn btn-danger btn-xs">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>XXXXXXXX</td>
+                            <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
+                            <td>BBBB</td>
+                            <td>700</td>
+                            <td contenteditable="true">
+                              <button class="btn btn-info btn-xs">
+                                <i class="fa fa-list"></i>
+                              </button>
+                              <button class="btn btn-warning btn-xs">
+                                <i class="fa fa-edit"></i>
+                              </button>
+                              <button class="btn btn-danger btn-xs">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="d-flex justify-content-between align-items-baseline top-border pt-3">
+                        <div class="pagination-info flex-grow-1 px-2">
+                          <p> แสดงรายการที่ 1 ถึง 10 จากทั้งหมด 18 รายการ </p>
+                        </div>
+                        <ul class="pagination px-2 ">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">&lt;</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">&gt;</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <p class="copyright float-right"> ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="http://code.jquery.com/jquery-3.2.1.js" crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"></script>
+  <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+  <script src="../../assets/vendors/moment.min.js"></script>
+  <!--  Charts Plugin -->
+  <script src="../../assets/vendors/chartist.min.js"></script>
+  <!-- Select Plugin -->
+  <script src="../../assets/vendors/jquery.select-bootstrap.js"></script>
+  <!--  DataTables.net Plugin    -->
+  <script src="../../assets/vendors/jquery.dataTables.min.js"></script>
+  <script src="../../assets/vendors/dataTables.bootstrap4.js"></script>
+  <!-- Sweet Alert 2 plugin -->
+  <script src="../../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
+  <!-- Material Dashboard javascript methods -->
+  <script src="../../assets/js/inspire.js"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
+</body>
+
+</html>
