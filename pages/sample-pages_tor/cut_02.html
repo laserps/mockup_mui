@@ -35,105 +35,24 @@
       <div class="sidebar-wrapper">
         <ul class="nav flex-column">
           <li class="d-flex flex-column">
-            <a href="index.html">
-              <i class="nav-icon"></i>
-              <p>หน้าเข้าสู่ระบบ</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="2_user_dashboard.html">
-              <i class="nav-icon"></i>
-              <p>หน้าหลักผู้ใช้</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="1_sale_twocolumn.html">
-              <i class="nav-icon"></i>
-              <p>งานขาย</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="3_planing.html">
-              <i class="nav-icon"></i>
-              <p>วางแผนผลิต</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column active">
-            <a href="8_cut.html">
-              <i class="nav-icon"></i>
-              <p>ตัดผ้า</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="9_Glue_Coating.html">
-              <i class="nav-icon"></i>
-              <p>เคลือบน้ำกาว</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="10_articulate_v2.html">
-              <i class="nav-icon"></i>
-              <p>ประกบผ้า</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="11_calender.html">
-              <i class="nav-icon"></i>
-              <p>เคลือบผิว</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="2_bake_search.html">
-              <i class="nav-icon"></i>
-              <p>รายการอบสายพาน</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="2_bake_menu.html">
-              <i class="nav-icon"></i>
-              <p>งานอบสายพาน(หน้าหลัก)</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="2_bake_setting.html">
-              <i class="nav-icon"></i>
-              <p>งานอบสายพาน(ตั้งค่า)</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="2_bake_save.html">
-              <i class="nav-icon"></i>
-              <p>งานอบสายพาน(บันทึกการอบสายพาน)</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a data-toggle="collapse" href="#tables" class="nav-link collapsed" aria-expanded="false">
-              <p>คลังสินค้า
+            <a href="#tables" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
+              <p>ขาย
                 <i class="fa fa-sort-desc submenu-toggle"></i>
               </p>
             </a>
             <div class="collapse" id="tables" role="navigation" aria-expanded="false" style="">
               <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="2b94cf34-2f02-ad93-3c9a-fec0a52844f9">
                 <li>
-                  <a class="nav-link" href="4_Stock_Compound_NonCompound.html">คลังสินค้า</a>
+                  <a class="nav-link" href="sale_01_user_dashboard.html">หน้าหลักผู้ใช้ - แผนกขาย</a>
                 </li>
                 <li>
-                  <a class="nav-link" href="4_In_Stock.html">นำเข้าคลังสินค้า</a>
+                  <a class="nav-link" href="sale_02_prod_order.html">งานขาย - บันทึกคำสั่งซื้อ</a>
                 </li>
                 <li>
-                  <a class="nav-link" href="4_Out_Stock.html">นำออกคลังสินค้า</a>
+                  <a class="nav-link" href="sale_03_cut_order.html">งานขาย - บันทึกคำสั่งตัดสต็อก</a>
                 </li>
                 <li>
-                  <a class="nav-link" href="4_In_Compound.html">นำเข้า Compound</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="4_Out_Compound.html">นำออก Compound</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="4_In_NonCompound.html">นำเข้า Non Compound</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="4_Out_NonCompound.html">นำออก Non Compound</a>
+                  <a class="nav-link" href="sale_04_search.html">ค้นหาข้อมูล : รายการขาย</a>
                 </li>
                 <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
                   <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
@@ -149,6 +68,167 @@
                 </div>
               </ul>
             </div>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="production_planing.html">
+              <i class="nav-icon"></i>
+              <p>วางแผนการผลิต</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column active">
+            <a href="#tables1" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
+              <p>ตัดผ้า
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables1" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="2b94cf34-2f02-ad93-3c9a-fec0a52844f9">
+                <li>
+                  <a class="nav-link" href="cut_01.html">ค้นหาข้อมูล : รายการตัดผ้า</a>
+                </li>
+                <li class="active">
+                  <a class="nav-link" href="cut_02.html">ตัดผ้า</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="#tables2" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
+              <p>ประกบผ้า
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables2" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="2b94cf34-2f02-ad93-3c9a-fec0a52844f9">
+                <li>
+                  <a class="nav-link" href="layering_01.html">ค้นหาข้อมูล : รายการประกบสายพาน</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="layering_02.html">ประกบผ้า</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="Glue_Coating.html">
+              <i class="nav-icon"></i>
+              <p>เคลือบน้ำกาว</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="calender_01.html">
+              <i class="nav-icon"></i>
+              <p>เคลือบผิว</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="#tables3" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
+              <p>อบ
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables3" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="2b94cf34-2f02-ad93-3c9a-fec0a52844f9">
+                <li>
+                  <a class="nav-link" href="bake_01_user_dashboard.html">หน้าหลักผู้ใช้ - แผนกอบสายพาน</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="bake_02_setting.html">ตั้งค่าการอบสายพาน</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="bake_03_enter_barcode.html">หน้าหลักผู้ใช้ - แผนกอบสายพาน</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="bake_04_data-entry.html">อบสายพาน - เครื่อง 1700 - กะ 1</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="bake_05_search.html">ค้นหาข้อมูล : รายการอบสายพาน</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="qc_02_main.html">
+              <i class="nav-icon"></i>
+              <p>QC</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="splicing_02.html">
+              <i class="nav-icon"></i>
+              <p>ต่อหัว</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a data-toggle="collapse" href="#tables4" class="nav-link collapsed" aria-expanded="false">
+              <p>จัดส่ง
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables4" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="2b94cf34-2f02-ad93-3c9a-fec0a52844f9">
+                <li>
+                  <a class="nav-link" href="delivery_01_search.html">วางแผนจัดส่งสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="delivery_02_planning.html">วางแผนจัดส่งสินค้า</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="store_01.html">
+              <i class="nav-icon"></i>
+              <p>คลังสินค้า</p>
+            </a>
           </li>
         </ul>
       </div>
