@@ -135,7 +135,7 @@
             </a>
             <div class="collapse" id="tables2" role="navigation" aria-expanded="false" style="">
               <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="2b94cf34-2f02-ad93-3c9a-fec0a52844f9">
-                <li>
+                <li class="active">
                   <a class="nav-link" href="layering_01.html">ค้นหาข้อมูล : รายการประกบสายพาน</a>
                 </li>
                 <li>
@@ -229,7 +229,7 @@
               </ul>
             </div>
           </li>
-          <li class="d-flex flex-column">
+          <li class="d-flex flex-column active">
             <a href="#tables11" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
               <p>QC
                 <i class="fa fa-sort-desc submenu-toggle"></i>
@@ -240,7 +240,7 @@
                 <li>
                   <a class="nav-link" href="qc_02_main.html">QC</a>
                 </li>
-                <li>
+                <li class="active">
                   <a class="nav-link" href="QC_report.html">รายงาน QC</a>
                 </li>
                 <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
@@ -265,7 +265,7 @@
             </a>
           </li>
           <li class="d-flex flex-column">
-            <a href="#tables4" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
+            <a data-toggle="collapse" href="#tables4" class="nav-link collapsed" aria-expanded="false">
               <p>จัดส่ง
                 <i class="fa fa-sort-desc submenu-toggle"></i>
               </p>
@@ -293,7 +293,7 @@
               </ul>
             </div>
           </li>
-          <li class="d-flex flex-column active">
+          <li class="d-flex flex-column">
             <a href="store_01.html">
               <i class="nav-icon"></i>
               <p>คลังสินค้า</p>
@@ -345,8 +345,7 @@
           <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">คลังสินค้าสำเร็จรูป &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <br> </a>
+          <a class="navbar-brand" href="#">รายงาน QC</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
@@ -397,15 +396,13 @@
                 <div class="card-body p-2">
                   <div class="d-flex justify-content-between">
                     <div class="flex-grow-1">
-                      <button type="button" class="btn btn-default"> แสดงตัวกรอง
+                      <button class="btn btn-default"> แสดงตัวกรอง
                         <span class="fa fa-caret-down"></span>
                       </button>
                     </div>
                     <div>
-                      <button class="btn btn-primary btn-lg font-lg" data-toggle="modal" data-target="#entry-in">
-                        <span class="fa fa-plus"></span> รับเข้า </button>
-                      <button class="btn btn-warning btn-lg font-lg" data-target="#entry-out" data-toggle="modal">
-                        <span class="fa fa-minus"></span> ตัดออก </button>
+                      <button class="btn btn-primary">
+                        <span class="fa fa-plus"></span> เพิ่มรายการประกบ </button>
                     </div>
                   </div>
                 </div>
@@ -417,9 +414,9 @@
               <div class="card mt-0 top-border">
                 <div class="card-body p-2">
                   <div class="d-flex flex-row align-items-baseline">
-                    <div class="p-2 form-group col-md-3">
-                      <label for="inputFromDate" class="col-form-label"> เลขที่แจ้งผลิต </label>
-                      <input type="text" class="form-control" id="inputFromDate"> </div>
+                    <div class="p-2 form-group col-md-4">
+                      <label class="col-form-label"> เลขที่ใบแจ้งผลิต </label>
+                      <input type="text" class="form-control" placeholder="MKxxxxxxx"> </div>
                   </div>
                   <div class="d-flex flex-row align-items-baseline top-border">
                     <div class="p-2 form-group col-md-3">
@@ -566,7 +563,7 @@
                   </div>
                   <hr>
                   <div class="d-flex flex-row align-items-baseline justify-content-end">
-                    <div class="p-2">
+                    <div class="p-2 form-group">
                       <button class="btn btn-success">เริ่มค้นหา</button>
                       <button class="btn btn-default">รีเซ็ต</button>
                     </div>
@@ -579,30 +576,33 @@
             <div class="col-md-12">
               <div class="card">
                 <div class="card-body p-2">
-                  <p class="lead"> รายการเคลื่อนไหว - สินค้าสำเร็จรูป </p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="lead">ผลการค้นหา</p>
+                    </div>
+                    <div class="col-md-6 text-right"> </div>
+                  </div>
                   <div class="row">
                     <div class="col-md-12">
-                      <table class="table top-border">
+                      <table class="table">
                         <thead>
-                          <tr class="font-sm">
+                          <tr>
                             <th>#</th>
-                            <th>วันที่/เวลา</th>
                             <th>เลขที่แจ้งผลิต</th>
-                            <th>รายการสินค้า</th>
-                            <th class="text-right">รับเข้า</th>
-                            <th class="text-right">จ่ายออก</th>
+                            <th>วันที่แจ้งผลิต</th>
+                            <th>วันที่ตรวจสอบ</th>
+                            <th>สถานะการตรวจสอบ</th>
                             <th>การกระทำ</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td>xx/xx/xx hh:mm</td>
-                            <td>XXXXXXXXXX</td>
                             <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
-                            <td class="text-right">200</td>
-                            <td></td>
-                            <td>
+                            <td>12/12/2018</td>
+                            <td>12/12/2018</td>
+                            <td>ผ่าน</td>
+                            <td contenteditable="true">
                               <button class="btn btn-info btn-xs">
                                 <i class="fa fa-list"></i>
                               </button>
@@ -616,12 +616,11 @@
                           </tr>
                           <tr>
                             <td>2</td>
-                            <td>xx/xx/xx hh:mm</td>
-                            <td>XXXXXXXXXX</td>
                             <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
-                            <td></td>
-                            <td class="text-right">50</td>
-                            <td>
+                            <td>12/12/2018</td>
+                            <td>12/12/2018</td>
+                            <td>ผ่าน</td>
+                            <td contenteditable="true">
                               <button class="btn btn-info btn-xs">
                                 <i class="fa fa-list"></i>
                               </button>
@@ -635,11 +634,10 @@
                           </tr>
                           <tr>
                             <td>3</td>
-                            <td>xx/xx/xx hh:mm</td>
-                            <td>XXXXXXXXXX</td>
                             <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
-                            <td></td>
-                            <td class="text-right">100</td>
+                            <td>12/12/2018</td>
+                            <td>12/12/2018</td>
+                            <td>ผ่าน</td>
                             <td contenteditable="true">
                               <button class="btn btn-info btn-xs">
                                 <i class="fa fa-list"></i>
@@ -654,11 +652,10 @@
                           </tr>
                           <tr>
                             <td>4</td>
-                            <td>xx/xx/xx hh:mm</td>
-                            <td>XXXXXXXXXX</td>
                             <td>xxx xxx xxx xxxxxx xxxxx xxxx</td>
-                            <td class="text-right">300</td>
-                            <td></td>
+                            <td>12/12/2018</td>
+                            <td>12/12/2018</td>
+                            <td>ผ่าน</td>
                             <td contenteditable="true">
                               <button class="btn btn-info btn-xs">
                                 <i class="fa fa-list"></i>
@@ -701,128 +698,40 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="col-md-12"> </div>
-            </div>
-          </div>
-        </div>
-        <footer class="footer">
-          <div class="container">
-            <p class="copyright float-right"> ©
-              <script>
-                document.write(new Date().getFullYear())
-              </script>
-              <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
-            </p>
-          </div>
-        </footer>
-      </div>
-    </div>
-    <div class="modal fade show" id="entry-in" rold="dialog" tabindex="-1">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title"> รับสินค้าเข้าคลัง </h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span>×</span>
-            </button>
-          </div>
-          <div class="modal-body pb-0">
-            <div class="row">
-              <label class="col-md-3 col-form-label"> เลขที่แจ้งผลิต </label>
-              <div class="col-md-7">
-                <div class="input-group">
-                  <input type="text" class="form-control">
-                  <button type="button" class="btn btn-default">
-                    <span class="fa fa-barcode font-lg"></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <label class="col-md-3 col-form-label"> หมายเหตุ </label>
-              <div class="col-md-8">
-                <div class="input-group">
-                  <textarea class="form-contorl w-100" rows="4"></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">บันทึก</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
-          </div>
         </div>
       </div>
-    </div>
-    <div class="modal fade show" id="entry-out" rold="dialog" tabindex="-1">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title"> ตัดสินค้าออกจากคลัง </h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span>×</span>
-            </button>
-          </div>
-          <div class="modal-body pb-0">
-            <div class="row">
-              <label class="col-md-4 col-form-label"> เลขที่แจ้งผลิต </label>
-              <div class="col-md-7">
-                <div class="input-group">
-                  <input type="text" class="form-control">
-                  <button type="button" class="btn btn-default">
-                    <span class="fa fa-barcode font-lg"></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <label class="col-md-4 col-form-label"> ความยาวตัดสต็อก </label>
-              <div class="col-md-5">
-                <div class="input-group">
-                  <input type="text" class="form-control">
-                  <div class="input-group-append px-2 pt-2 border-1 text-muted"> เมตร </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <label class="col-md-4 col-form-label"> หมายเหตุ </label>
-              <div class="col-md-8">
-                <div class="input-group">
-                  <textarea class="form-contorl w-100" rows="4"></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">บันทึก</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
-          </div>
+      <footer class="footer">
+        <div class="container">
+          <p class="copyright float-right"> ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
+          </p>
         </div>
-      </div>
-      <!--   Core JS Files   -->
-      <script src="http://code.jquery.com/jquery-3.2.1.js" crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"></script>
-      <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
-      <script src="../../assets/vendors/moment.min.js"></script>
-      <!--  Charts Plugin -->
-      <script src="../../assets/vendors/chartist.min.js"></script>
-      <!-- Select Plugin -->
-      <script src="../../assets/vendors/jquery.select-bootstrap.js"></script>
-      <!--  DataTables.net Plugin    -->
-      <script src="../../assets/vendors/jquery.dataTables.min.js"></script>
-      <script src="../../assets/vendors/dataTables.bootstrap4.js"></script>
-      <!-- Sweet Alert 2 plugin -->
-      <script src="../../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
-      <!-- Material Dashboard javascript methods -->
-      <script src="../../assets/js/inspire.js"></script>
-      <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
-        <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
-      </pingendo>
+      </footer>
     </div>
   </div>
+  <!--   Core JS Files   -->
+  <script src="http://code.jquery.com/jquery-3.2.1.js" crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"></script>
+  <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+  <script src="../../assets/vendors/moment.min.js"></script>
+  <!--  Charts Plugin -->
+  <script src="../../assets/vendors/chartist.min.js"></script>
+  <!-- Select Plugin -->
+  <script src="../../assets/vendors/jquery.select-bootstrap.js"></script>
+  <!--  DataTables.net Plugin    -->
+  <script src="../../assets/vendors/jquery.dataTables.min.js"></script>
+  <script src="../../assets/vendors/dataTables.bootstrap4.js"></script>
+  <!-- Sweet Alert 2 plugin -->
+  <script src="../../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
+  <!-- Material Dashboard javascript methods -->
+  <script src="../../assets/js/inspire.js"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
 </body>
 
 </html>
