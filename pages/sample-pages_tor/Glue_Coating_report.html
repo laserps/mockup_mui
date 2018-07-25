@@ -14,13 +14,13 @@
   <!--  Paper Dashboard CSS    -->
   <link href="../../assets/css/inspire.css" rel="stylesheet">
   <!--  CSS for Demo Purpose, don't include it in your project     -->
-  <link href="../../assets/css/demo.css" rel="stylesheet">
+  <!-- <link href="../../assets/css/demo.css" rel="stylesheet"> -->
   <!--     Fonts and icons     -->
   <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
   <link href="../../assets/css/font-muli.css" rel="stylesheet" type="text/css">
   <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
   <link href="../../assets/css/themify-icons.css" rel="stylesheet">
-  <link href="./mui.css" rel="stylesheet"> </head>
+  <link rel="stylesheet" href="mui.css"> </head>
 
 <body>
   <div class="wrapper">
@@ -164,10 +164,10 @@
             </a>
             <div class="collapse" id="tables9" role="navigation" aria-expanded="false" style="">
               <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="2b94cf34-2f02-ad93-3c9a-fec0a52844f9">
-                <li class="active">
+                <li>
                   <a class="nav-link" href="Glue_Coating.html">เคลือบน้ำกาว</a>
                 </li>
-                <li>
+                <li class="active">
                   <a class="nav-link" href="Glue_Coating_report.html">รายงานการเคลือบน้ำกาว</a>
                 </li>
                 <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
@@ -211,7 +211,7 @@
                 <li>
                   <a class="nav-link" href="bake_04_data-entry.html">อบสายพาน - เครื่อง 1700 - กะ 1</a>
                 </li>
-                <li>
+                <li class="active">
                   <a class="nav-link" href="bake_05_search.html">ค้นหาข้อมูล : รายการอบสายพาน</a>
                 </li>
                 <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
@@ -242,7 +242,7 @@
             </a>
           </li>
           <li class="d-flex flex-column">
-            <a data-toggle="collapse" href="#tables4" class="nav-link collapsed" aria-expanded="false">
+            <a href="#tables4" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
               <p>จัดส่ง
                 <i class="fa fa-sort-desc submenu-toggle"></i>
               </p>
@@ -322,7 +322,7 @@
           <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">เคลือบน้ำกาว</a>
+          <a class="navbar-brand" href="#">รายงานการเคลือบน้ำกาว</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
@@ -367,142 +367,232 @@
       </nav>
       <div class="">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <!--
-              <div class="card">
-                <div class="card-body p-2">
--->
-              <form class="form">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>เลขที่ใบแจ้งผลิต:</label>
-                          <span>M2018120100001</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>วันที่สั่งซื้อ: &nbsp;</label>
-                          <span>1/12/2561</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div>
-                          <label>กำหนดส่ง: </label>
-                          <span>31/12/2561</span>
-                        </div>
-                      </div>
+          <!-- filter bar -->
+          <div class="card mb-0">
+            <div class="card-body d-flex justify-content-between p-2">
+              <div class="flex-grow-1">
+                <button class="btn btn-default"> แสดงตัวกรอง
+                  <span class="fa fa-caret-down"></span>
+                </button>
+              </div>
+              <div class="">
+                <button data-toggle="modal" class="btn btn-primary" data-target="#delivery_date">
+                  <span class="fa fa-plus"></span> เพิ่มแผนการจัดส่งสินค้า </button>
+              </div>
+            </div>
+          </div>
+          <!-- filter box -->
+          <div class="card mt-0 top-border">
+            <div class="card-body p-2">
+              <div class="d-flex flex-row align-items-baseline">
+                <div class="p-2 form-group col-md-4">
+                  <label class="col-form-label"> เลขที่ใบแจ้งผลิต </label>
+                  <input type="text" class="form-control" placeholder="MKxxxxxxx"> </div>
+                <div class="p-2 form-group col-md-3">
+                  <label class="col-form-label" for="inputCustomer">ลูกค้า</label>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> - เลือก - </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">AAA AAAAAA</a>
+                      <a class="dropdown-item" href="#">BBBBB BBBBBBBB</a>
+                      <a class="dropdown-item" href="#">CCC CCCCCCCC</a>
+                      <a class="dropdown-item" href="#">DDDD DDDDDDDDD</a>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                          <li class="nav-item">
-                            <a class="nav-link active" href="#" data-toggle="tab" data-target="#tabone">รายละเอียดสายพาน</a>
+              </div>
+              <div class="d-flex flex-row align-items-baseline top-border">
+                <div class="p-2 form-group col-md-2">
+                  <label for="inputFromDate" class="col-form-label">ระยะเวลาทำงาน</label>
+                  <input type="text" class="form-control" id="inputFromDate" placeholder="เวลาเริ่ม"> </div>
+                <div class="p-2 form-group col-md-2">
+                  <label class="col-form-label">&nbsp;</label>
+                  <input type="text" class="form-control" id="inputToDate" placeholder="เวลาเสร็จ"> </div>
+              </div>
+              <div class="d-flex flex-row align-items-baseline top-border">
+                <div class="p-2 form-group">
+                  <label for="inputFabric" class="col-form-label">สเปคผ้า</label>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> - เลือก - </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">EP 120</a>
+                      <a class="dropdown-item" href="#">EP 160</a>
+                      <a class="dropdown-item" href="#">EP 200</a>
+                      <a class="dropdown-item" href="#">EP 250</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 form-group">
+                  <label for="inputBeltWidth" class="col-form-label">เลขที่ม้วนผ้า</label>
+                  <input type="text" class="form-control" id="inputBeltWidth" placeholder="ระบุเลขที่ม้วนผ้า"> </div>
+              </div>
+              <div class="d-flex flex-row align-items-baseline top-border">
+                <div class="p-2 form-group col-md-2">
+                  <label for="inputLength" class="col-form-label">ความยาว</label>
+                  <input type="text" class="form-control" id="inputLength" placeholder="ตั้งแต่"> </div>
+                <div class="p-2 form-group col-md-2">
+                  <label class="col-form-label">&nbsp;</label>
+                  <input type="text" class="form-control" id="inputLength" placeholder="จนถึง"> </div>
+                <div class="p-2 form-group">
+                  <label class="col-form-label">&nbsp;</label>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> เมตร </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">เมตร</a>
+                      <a class="dropdown-item" href="#">เซ็นต์.</a>
+                      <a class="dropdown-item" href="#">นิ้ว</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex flex-row align-items-baseline justify-content-end">
+                <div class="p-2 form-group">
+                  <button class="btn btn-success">เริ่มค้นหา</button>
+                  <button class="btn btn-default">รีเซ็ต</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- search result -->
+        </div>
+      </div>
+      <div class="">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body p-2">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="lead">รายงานการเคลือบน้ำกาว</p>
+                    </div>
+                    <div class="col-md-6 text-right"> </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>เลขที่แจ้งผลิต</th>
+                            <th>เวลาเริ่ม</th>
+                            <th>เวลาเสร็จ</th>
+                            <th>สเปคผ้า</th>
+                            <th>เลขที่ม้วนผ้า</th>
+                            <th>ความยาวม้วนผ้า</th>
+                            <th>การกระทำ</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>XXXXXXXX</td>
+                            <td>xx:xx</td>
+                            <td>xx:xx</td>
+                            <td>AAAA</td>
+                            <td>1234</td>
+                            <td>10</td>
+                            <td>
+                              <button class="btn btn-info btn-xs">
+                                <i class="fa fa-list"></i>
+                              </button>
+                              <button class="btn btn-warning btn-xs">
+                                <i class="fa fa-edit"></i>
+                              </button>
+                              <button class="btn btn-danger btn-xs">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>XXXXXXXX</td>
+                            <td>xx:xx</td>
+                            <td>xx:xx</td>
+                            <td>AAAA</td>
+                            <td>1235</td>
+                            <td>10</td>
+                            <td contenteditable="true">
+                              <button class="btn btn-info btn-xs">
+                                <i class="fa fa-list"></i>
+                              </button>
+                              <button class="btn btn-warning btn-xs">
+                                <i class="fa fa-edit"></i>
+                              </button>
+                              <button class="btn btn-danger btn-xs">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>XXXXXXXX</td>
+                            <td>xx:xx</td>
+                            <td>xx:xx</td>
+                            <td>BBBB</td>
+                            <td>1236</td>
+                            <td>10</td>
+                            <td contenteditable="true">
+                              <button class="btn btn-info btn-xs">
+                                <i class="fa fa-list"></i>
+                              </button>
+                              <button class="btn btn-warning btn-xs">
+                                <i class="fa fa-edit"></i>
+                              </button>
+                              <button class="btn btn-danger btn-xs">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>XXXXXXXX</td>
+                            <td>xx:xx</td>
+                            <td>xx:xx</td>
+                            <td>BBBB</td>
+                            <td>1234</td>
+                            <td>10</td>
+                            <td contenteditable="true">
+                              <button class="btn btn-info btn-xs">
+                                <i class="fa fa-list"></i>
+                              </button>
+                              <button class="btn btn-warning btn-xs">
+                                <i class="fa fa-edit"></i>
+                              </button>
+                              <button class="btn btn-danger btn-xs">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="d-flex justify-content-between align-items-baseline top-border pt-3">
+                        <div class="pagination-info flex-grow-1 px-2">
+                          <p> แสดงรายการที่ 1 ถึง 4 จากทั้งหมด 12 รายการ </p>
+                        </div>
+                        <ul class="pagination px-2 ">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">&lt;</a>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="tab" data-target="#tabtwo">รายละเอียดลูกค้า</a>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">&gt;</a>
                           </li>
                         </ul>
                       </div>
-                      <div class="card-body p-2">
-                        <div class="tab-content mt-2">
-                          <div class="tab-pane fade show active" id="tabone" role="tabpanel">
-                            <p> บั้ง สีดำ 40 นิ้ว x 5 ชั้น EP 120 / เกรด M (M/PI) </p>
-                            <p> หนา: 3/2 มม. หนารวม: 10 มม. / ยาว 15 เมตร, ต่อกลม, ตีตรา MUI </p>
-                          </div>
-                          <div class="tab-pane fade" id="tabtwo" role="tabpanel">
-                            <p class=""> ชื่อลูกค้า: ชลบุรี เอ็มยูไอ ไพศาล </p>
-                            <p> ประเภทลูกค้า: ลูกค้าพิเศษ </p>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <p class="card-body-title px-2"> ระยะเวลาทำงาน </p>
-                        <div class="form-row form-inline">
-                          <div class="form-group col-md-3">
-                            <label> เวลาเริ่ม </label>
-                            <div class="input-group">
-                              <input type="text" class="form-control">
-                              <div class="input-group-append px-2 pt-2 border-1 text-muted"> น. </div>
-                            </div>
-                          </div>
-                          <div class="form-group col-md-3">
-                            <label> เวลาเสร็จ </label>
-                            <div class="input-group">
-                              <input type="text" class="form-control">
-                              <div class="input-group-append px-2 pt-2 border-1 text-muted"> น. </div>
-                            </div>
-                          </div>
-                        </div>
-                        <hr>
-                        <p class="card-body-title px-2"> ผ้าที่ใช้ </p>
-                        <div class="row">
-                          <div class="col-md-3">
-                            <div class="form-group px-2">
-                              <label> สเปคผ้าที่ใช้ </label>
-                              <div class="">
-                                <select class="form-control">
-                                  <option>EP 100</option>
-                                  <option>EP 150</option>
-                                  <option>EP 200</option>
-                                  <option>EP 250</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="form-group">
-                              <label> เลขที่ม้วนผ้า </label>
-                              <div class="input-group">
-                                <input type="text" class="form-control"> </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="form-group">
-                              <label> ความยาวม้วนผ้า </label>
-                              <div class="input-group">
-                                <input type="text" class="form-control">
-                                <div class="input-group-append px-2 pt-2 border-1 text-muted"> เมตร </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-end">
-                          <div class="px-2">
-                            <button> บันทึก </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-              <!--
-                </div>   
               </div>
--->
             </div>
           </div>
         </div>
@@ -520,28 +610,13 @@
     </div>
   </div>
   <!--   Core JS Files   -->
-  <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
-  <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
-  <script src="../../assets/vendors/tether.min.js" type="text/javascript"></script>
-  <script src="../../assets/vendors/bootstrap.min.js" type="text/javascript"></script>
-  <script src="../../assets/vendors/material.min.js" type="text/javascript"></script>
-  <script src="../../assets/vendors/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
-  <!-- Forms Validations Plugin -->
-  <script src="../../assets/vendors/jquery.validate.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.2.1.js" crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"></script>
   <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
   <script src="../../assets/vendors/moment.min.js"></script>
   <!--  Charts Plugin -->
   <script src="../../assets/vendors/chartist.min.js"></script>
-  <!--  Plugin for the Wizard -->
-  <script src="../../assets/vendors/jquery.bootstrap-wizard.js"></script>
-  <!--  Notifications Plugin    -->
-  <script src="../../assets/vendors/bootstrap-notify.js"></script>
-  <!-- DateTimePicker Plugin -->
-  <script src="../../assets/vendors/bootstrap-datepicker.min.js"></script>
-  <!-- Vector Map plugin -->
-  <script src="../../assets/vendors/jquery-jvectormap.js"></script>
-  <!-- Sliders Plugin -->
-  <script src="../../assets/vendors/nouislider.min.js"></script>
   <!-- Select Plugin -->
   <script src="../../assets/vendors/jquery.select-bootstrap.js"></script>
   <!--  DataTables.net Plugin    -->
@@ -549,12 +624,6 @@
   <script src="../../assets/vendors/dataTables.bootstrap4.js"></script>
   <!-- Sweet Alert 2 plugin -->
   <script src="../../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
-  <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
-  <script src="../../assets/vendors/jasny-bootstrap.min.js"></script>
-  <!--  Full Calendar Plugin    -->
-  <script src="../../assets/vendors/fullcalendar.min.js"></script>
-  <!-- TagsInput Plugin -->
-  <script src="../../assets/vendors/jquery.tagsinput.js"></script>
   <!-- Material Dashboard javascript methods -->
   <script src="../../assets/js/inspire.js"></script>
   <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
